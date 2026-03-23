@@ -181,3 +181,4 @@ pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
       28140176FF2A98AD077AE20F1F0C857FC076602F
 uid           [ unknown] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com> #This is her key list
 sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ echo "Hola dannitaaaaaaaa" > doc_no_cifrado.txt #With that command we send a message with an archive txt
