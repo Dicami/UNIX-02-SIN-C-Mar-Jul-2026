@@ -169,3 +169,15 @@ sub   rsa4096 2026-03-23 [E] [expires: 2027-03-23]
 gpg: key 1F0C857FC076602F: public key "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" imported #Whit that command i exported her public key 
 gpg: Total number processed: 1 #As a result i can see her email
 gpg:               imported: 1
+$ gpg --list-keys #Now we exported again our keys list
+/home/codespace/.gnupg/pubring.kbx
+----------------------------------
+pub   rsa4096 2026-03-23 [SC] [expires: 2027-03-23]
+      C0940405536BDA498D561C15BCE14E7DCA73AB9B
+uid           [ultimate] Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com> #Thiis my key list
+sub   rsa4096 2026-03-23 [E] [expires: 2027-03-23]
+
+pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
+      28140176FF2A98AD077AE20F1F0C857FC076602F
+uid           [ unknown] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com> #This is her key list
+sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
