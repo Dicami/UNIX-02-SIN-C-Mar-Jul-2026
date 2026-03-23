@@ -194,3 +194,11 @@ in the user ID.  If you *really* know what you are doing,
 you may answer the next question with yes.
 
 Use this key anyway? (y/N) y
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado.txt #With that command we can see the content in that case doc cifrado
+�
+ �$
+��gT-�[esg+̉�#����U�({�yb��\,��/��Ѿ��� ]d�:V�J��,�[�.�'b�$�`��|:c�*^�;��tS�yy�c1
+                                                                               g#�a���i���ߧ_�����0��-Ě#D%jR�#,40�e����c�@�L�am�
+                                                                                                                               J'����o&���vO�C�D��r{����#��t��6~�o���Oa�W��,��\E��C�<KD!&��4k$��
+U�Mqam�ǻѹ>Ʒ������s�CH6�w7IR�4WH�r��~���I��
+                                          {b$"��Fr��>��`U�&R�\�R<쟵���%>���0v��g��}�[6��!+3V*l��)���=1�oD��$#�z�,�0�I#�-Ϻ:g!��4�2,�D����ԙw�^����2�y�'~�bKn�����ڧ�&��B���lͶ��p�T�q�^��D����|s�(��!�䣋����G�H���PoU&�  ���b�k���}�s�u���~�ôEߋ^���ݫx9@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
