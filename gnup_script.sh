@@ -157,3 +157,15 @@ mQINBGnBTl4BEADB7WpogD447s22Q9+i2oh+pxsMxGlMPbc7NrzmFbzQU239o857
 qqi5FiQe6bTD+1ds3OV65gvEB9aY2495cK3rvhrpssC/R/uekrSvuIG7x9+4HJ/W
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long #This command list the secret keys
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --export-secret-keys BCE14E7DCA73AB9B #This command export the secret keys that we have 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys #At first we can list our keys 
+/home/codespace/.gnupg/pubring.kbx
+----------------------------------
+pub   rsa4096 2026-03-23 [SC] [expires: 2027-03-23]
+      C0940405536BDA498D561C15BCE14E7DCA73AB9B
+uid           [ultimate] Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>
+sub   rsa4096 2026-03-23 [E] [expires: 2027-03-23]
+
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --import llave_esposa_publica.asc #Then my friend Danna give me her public key, then i created an archive whin her public key
+gpg: key 1F0C857FC076602F: public key "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" imported #Whit that command i exported her public key 
+gpg: Total number processed: 1 #As a result i can see her email
+gpg:               imported: 1
