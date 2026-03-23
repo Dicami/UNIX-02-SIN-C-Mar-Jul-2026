@@ -182,3 +182,15 @@ pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
 uid           [ unknown] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com> #This is her key list
 sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ echo "Hola dannitaaaaaaaa" > doc_no_cifrado.txt #With that command we send a message with an archive txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado.text --encrypt --recipient   28140176FF2A98AD077AE20F1F0C857FC076602F #With that command encrypt the archive with the hash 
+gpg: AC240ACED367542D: There is no assurance this key belongs to the named user
+
+sub  rsa4096/AC240ACED367542D 2026-03-20 DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+ Primary key fingerprint: 2814 0176 FF2A 98AD 077A  E20F 1F0C 857F C076 602F
+      Subkey fingerprint: EFAB 87FA 5BC0 673D 0FBE  95E7 AC24 0ACE D367 542D
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N) y
