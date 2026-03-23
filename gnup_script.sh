@@ -155,4 +155,5 @@ LICENSE  README.md  calculadora  gnup_script.sh  gnupg_  mi
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --export dianacamilux@gmail.com > mi_llave_publica.asc #This command export my public key 
 mQINBGnBTl4BEADB7WpogD447s22Q9+i2oh+pxsMxGlMPbc7NrzmFbzQU239o857
 qqi5FiQe6bTD+1ds3OV65gvEB9aY2495cK3rvhrpssC/R/uekrSvuIG7x9+4HJ/W
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long #This command list the secret keys 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long #This command list the secret keys
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --export-secret-keys BCE14E7DCA73AB9B #This command export the secret keys that we have 
