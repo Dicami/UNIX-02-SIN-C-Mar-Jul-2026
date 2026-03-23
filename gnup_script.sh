@@ -202,3 +202,9 @@ Use this key anyway? (y/N) y
                                                                                                                                J'����o&���vO�C�D��r{����#��t��6~�o���Oa�W��,��\E��C�<KD!&��4k$��
 U�Mqam�ǻѹ>Ʒ������s�CH6�w7IR�4WH�r��~���I��
                                           {b$"��Fr��>��`U�&R�\�R<쟵���%>���0v��g��}�[6��!+3V*l��)���=1�oD��$#�z�,�0�I#�-Ϻ:g!��4�2,�D����ԙw�^����2�y�'~�bKn�����ڧ�&��B���lͶ��p�T�q�^��D����|s�(��!�䣋����G�H���PoU&�  ���b�k���}�s�u���~�ôEߋ^���ݫx9@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
+
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --decrypt esposa_doc_cifrado.txt #With that command we can see the message that my friend send me like a encrypt txt text
+gpg: encrypted with rsa4096 key, ID EC071FDE9F8261CE, created 2026-03-23
+      "Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>"
+Hola Cami t amo #we see txt text she send me
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
