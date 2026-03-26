@@ -271,33 +271,18 @@ pub  rsa4096/1F0C857FC076602F
 sub  rsa4096/AC240ACED367542D
      created: 2026-03-20  expires: 2027-03-20  usage: E   
 [  full  ] (1). DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
-#no
-gpg: checking the trustdb
-gpg: marginals needed: 3  completes needed: 1  trust model: pgp
-gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
-gpg: next trustdb check due at 2027-03-26
-pub  rsa4096/1F0C857FC076602F
+
+
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --sign-key 28140176FF2A98AD077AE20F1F0C857FC076602F #with that command we can sign a key
      created: 2026-03-20  expires: 2027-03-20  usage: SC  
-     trust: full          validity: unknown
+     trust: full          validity: full
 sub  rsa4096/AC240ACED367542D
      created: 2026-03-20  expires: 2027-03-20  usage: E   
-[ unknown] (1). DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+[  full  ] (1). DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
 
-
-pub  rsa4096/1F0C857FC076602F
-     created: 2026-03-20  expires: 2027-03-20  usage: SC  
-     trust: full          validity: unknown
- Primary key fingerprint: 2814 0176 FF2A 98AD 077A  E20F 1F0C 857F C076 602F
-
-     DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
-
-This key is due to expire on 2027-03-20.
-Are you sure that you want to sign this key with your
-key "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" (2DB5E37DF317D30F)
+"DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" 
 
 Really sign? (y/N) y
-�s���
-
 
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify doc_no_cifrado_firmado.txt
 gpg: Signature made Thu Mar 26 01:42:35 2026 UTC
