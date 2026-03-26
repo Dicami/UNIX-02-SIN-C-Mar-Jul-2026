@@ -1,3 +1,4 @@
+Encryption and Signatures with GNUPG
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ uname -a #We can see information about our computer’s architecture and system.
 Linux codespaces-9db7a6 6.8.0-1044-azure #50~22.04.1-Ubuntu SMP Wed Dec  3 15:13:22 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ which gpg 
