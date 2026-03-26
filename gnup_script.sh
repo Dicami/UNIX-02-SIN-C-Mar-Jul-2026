@@ -1,4 +1,5 @@
 Encryption and Signatures with GNUPG
+#Bloque A
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ uname -a #We can see information about our computer’s architecture and system.
 Linux codespaces-9db7a6 6.8.0-1044-azure #50~22.04.1-Ubuntu SMP Wed Dec  3 15:13:22 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ which gpg # we can find the location of the GPG program
@@ -118,7 +119,7 @@ QRjBpK2tlcTv0GviJ2qqIRqBx1GT+ZIrTg5VCjC9GtKzXpLuHrp/MMd6Zyj5mie6
 gVwCnXB7k9lcXsw2INS1FFOPTsrQK9KCnj4dpqHL4tfbC+FaPQAf3Va0SieIQ+HF
 +4gz0dRQ3Aq99fUd4uisYuPAsV2OB8D57bTPYfvnffBiRWU9hocKdtOf8g+yaJgK
 qErkFVJhxWzV5HyHzcgA9EqlSvyFv5Us7up3iPQeRRYOoKdlRc0lVGWTsGZ+fn4g
-kokpQYZOYtxsllAzPotaBItVPd+uqhq52Xb+r5rNi3buKj7Tgf3b1PlEGSIxKr5K
+kokpQYZOYtxsllAzPotaBItVPd+uqhq52Xb+r5rNi3buKj7Tgf3b1PlEGSIxKr5K #My public key
 RLDwyAcWtVRSQDejPNymDvlUtxrpLdy7+h+cm0pu1gN7rLeHWdQvIvuLP3fEAWMq
 wtxdNoCzUvSCC9C7ei5tlBmnnGzgv30H4C1YII8k32OEG5IR9WBaoMw/M0JrrLaC
 E5RjAKgTQYTkZ9heSqE1Zv/Ase2I6JF+hq2DDRfOWT59185wox4UIPzF2ytaYG1j
@@ -153,14 +154,7 @@ sec   rsa4096/2DB5E37DF317D30F 2026-03-26 [SC] [expires: 2027-03-26]
 uid                 [ultimate] Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
 ssb   rsa4096/2B5ACECD7F399731 2026-03-26 [E] [expires: 2027-03-26]
 
-#Clase 2
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ $ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
-gpg: signing failed: Screen or window too small
-gpg: doc_no_cifrado.txt: clear-sign failed: Screen or window too small #This command export my public key 
-mQINBGnBTl4BEADB7WpogD447s22Q9+i2oh+pxsMxGlMPbc7NrzmFbzQU239o857
-qqi5FiQe6bTD+1ds3OV65gvEB9aY2495cK3rvhrpssC/R/uekrSvuIG7x9+4HJ/W
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long #This command list the secret keys
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --export-secret-keys BCE14E7DCA73AB9B #This command export the secret keys that we have 
+#Bloque B
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys #At first we can list our keys 
 /home/codespace/.gnupg/pubring.kbx
 ----------------------------------
@@ -169,7 +163,7 @@ pub   rsa4096 2026-03-23 [SC] [expires: 2027-03-23]
 uid           [ultimate] Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>
 sub   rsa4096 2026-03-23 [E] [expires: 2027-03-23]
 
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --import llave_esposa_publica.asc #Then my friend Danna give me her public key, then i created an archive whin her public key
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --import llave_esposa_publica.asc #Then my friend Danna gives me her public key, then i created an archive whin her public key
 gpg: key 1F0C857FC076602F: public key "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" imported #Whit that command i exported her public key 
 gpg: Total number processed: 1 #As a result i can see her email
 gpg:               imported: 1
@@ -185,6 +179,7 @@ pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
       28140176FF2A98AD077AE20F1F0C857FC076602F
 uid           [ unknown] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com> #This is her key list
 sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
+#Bloque C
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ echo "Hola dannitaaaaaaaa" > doc_no_cifrado.txt #With that command we send a message with an archive txt
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado.text --encrypt --recipient   28140176FF2A98AD077AE20F1F0C857FC076602F #With that command encrypt the archive with the hash 
 gpg: AC240ACED367542D: There is no assurance this key belongs to the named user
@@ -198,6 +193,7 @@ in the user ID.  If you *really* know what you are doing,
 you may answer the next question with yes.
 
 Use this key anyway? (y/N) y
+
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado.txt #With that command we can see the content in that case doc cifrado
 �
  �$
@@ -207,12 +203,12 @@ Use this key anyway? (y/N) y
 U�Mqam�ǻѹ>Ʒ������s�CH6�w7IR�4WH�r��~���I��
                                           {b$"��Fr��>��`U�&R�\�R<쟵���%>���0v��g��}�[6��!+3V*l��)���=1�oD��$#�z�,�0�I#�-Ϻ:g!��4�2,�D����ԙw�^����2�y�'~�bKn�����ڧ�&��B���lͶ��p�T�q�^��D����|s�(��!�䣋����G�H���PoU&�  ���b�k���}�s�u���~�ôEߋ^���ݫx9@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
 
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $#With that command we can see the message that my friend send me like a encrypt txt text
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --decrypt esposa_doc_cifrado #With that command we can see the message that my friend send me like a encrypt txt text
 gpg: encrypted with rsa4096 key, ID EC071FDE9F8261CE, created 2026-03-23
       "Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>"
 Hola Cami t amo #we see txt text she send me
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #With that command 
+#Bloque D
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #With that command command, we sign a file
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_no_cifrado_firmado.txt
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
