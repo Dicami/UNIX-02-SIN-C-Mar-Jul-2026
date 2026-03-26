@@ -3,7 +3,7 @@ Encryption and Signatures with GNUPG
 Linux codespaces-9db7a6 6.8.0-1044-azure #50~22.04.1-Ubuntu SMP Wed Dec  3 15:13:22 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ which gpg # we can find the location of the GPG program
 /usr/bin/gpg
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --version
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --version #we can see the installed GPG version
 gpg (GnuPG) 2.4.4
 libgcrypt 1.10.3
 Copyright (C) 2024 g10 Code GmbH
