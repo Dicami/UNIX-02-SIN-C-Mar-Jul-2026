@@ -318,11 +318,11 @@ sub   rsa4096 2026-03-26 [E] [expires: 2027-03-26]
 ��gT-�q��A����IܳҨ˃�j��KٽJUq4�?n2ZYS�hG2N��X�UgX��>�����v�����S�&�ޞ�2.��b�a�P���J&�lZ��iO4���kW�y�-77IS��ad��7v�ݮ�>�@tSz�k�X�E����Ӹ����L�]��\��c\%ͣ��X�m����M%���{��o!(S�?;}}�Z0\��.ُ|�Z��p���;�bS{�y����t��ekJ�U���X�X7�F˱6���z���O���ݚ�u�n��8����F�9QM�.}u'��2=�ʚm�ލ����؇S�E�'��_�A�Y�1E���JK�#�H�k�")v�Z�(]̝7�F�&�:ºn%5qu��
 �;6� ��1#{F�F%��ϰBX7
 7{=����@6�ߟ��:
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt esposa_doc_cifrado_y_firmadoo.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt esposa_doc_cifrado_y_firmadoo.txt #With that command, we decrypt and verify the signed file
 gpg: encrypted with rsa4096 key, ID 2B5ACECD7F399731, created 2026-03-26
       "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>"
 gpg: Signature made Thu Mar 26 17:32:04 2026 UTC
 gpg:                using RSA key 28140176FF2A98AD077AE20F1F0C857FC076602F
 gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" [full]
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado_y_firmado_descifrado_y_validado.txt
-Hola Cami t amo
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado_y_firmado_descifrado_y_validado.txt #we display the content of the decrypted file
+Hola Cami t amo #The message 
