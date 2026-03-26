@@ -144,7 +144,7 @@ gpg: invalid option "--edianacamilux7"
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --dianacamilux@gmail.com > mi llave_publica.asc 
 gpg: invalid option "--dianacamilux@gmail.com"
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpd --armor  --export dianacamilux@gmail.com > mi llave_publica.asc
-bash: gpd: command not found
+bash: gpd: command not f
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor  --export 
 dianacamilux@gmail.com > mi llave_publica.asc
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ ls
@@ -152,7 +152,9 @@ LICENSE  README.md  calculadora  gnup_script.sh  gnupg_  mi
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat
 
 #Clase 2
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --export dianacamilux@gmail.com > mi_llave_publica.asc #This command export my public key 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ $ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
+gpg: signing failed: Screen or window too small
+gpg: doc_no_cifrado.txt: clear-sign failed: Screen or window too small #This command export my public key 
 mQINBGnBTl4BEADB7WpogD447s22Q9+i2oh+pxsMxGlMPbc7NrzmFbzQU239o857
 qqi5FiQe6bTD+1ds3OV65gvEB9aY2495cK3rvhrpssC/R/uekrSvuIG7x9+4HJ/W
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long #This command list the secret keys
@@ -203,7 +205,7 @@ Use this key anyway? (y/N) y
 U�Mqam�ǻѹ>Ʒ������s�CH6�w7IR�4WH�r��~���I��
                                           {b$"��Fr��>��`U�&R�\�R<쟵���%>���0v��g��}�[6��!+3V*l��)���=1�oD��$#�z�,�0�I#�-Ϻ:g!��4�2,�D����ԙw�^����2�y�'~�bKn�����ڧ�&��B���lͶ��p�T�q�^��D����|s�(��!�䣋����G�H���PoU&�  ���b�k���}�s�u���~�ôEߋ^���ݫx9@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
 
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --decrypt esposa_doc_cifrado.txt #With that command we can see the message that my friend send me like a encrypt txt text
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $#With that command we can see the message that my friend send me like a encrypt txt text
 gpg: encrypted with rsa4096 key, ID EC071FDE9F8261CE, created 2026-03-23
       "Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>"
 Hola Cami t amo #we see txt text she send me
@@ -213,40 +215,78 @@ Hola Cami t amo #we see txt text she send me
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-- -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
-
-
-- -----BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCgAdFiEEwJQEBVNr2kmNVhwVvOFOfcpzq5sFAmnBX94ACgkQvOFOfcpz
-q5utZxAAk5kt4DGWGR0eeYsJEhJmAHvEPxWx48VQuBR7aiyPoLb46iZOOKNv3klo
-nQkNylD4V72miwWD9qrkYdNC4MIvYRt3z2S7z55beAF1z4lrOeQoV9bHNBC4GTqp
-RxwtDbqpNaW7FcJW+5IDzNndirc8qYakqF7f0csjPlDIwBcKWeC4AKIwfZIaaRLB
-l8ZPSHd7C6MLkKWJ42QRdtxjqYv6tLRhEt3T4qQsQDCbKGYIbbTC/cm6jIKXGvsn
-OLf2lqgRD24r9Gk88p+eItWgoSeoAHPtGwpdBL8bnR8ZNXqW1zdi1Qkpd56jHLmb
-vqmzEmr7Ltvihk3b1/wh+W9W8yl9SCBznlWqD8CE0qy1lZ86o/esVwkvql3zETC7
-LameYAMy3BaRSxgHQqvjHYZA8RQJlO3c6s2YFGUNMJVPjHDf7tjW7LMKjirbug5P
-hIh00UM4r2tVB1WE2csIDIzGlGNDmmIpVoay8Dp17NYObkKYB1oEoaifiuBLHYiY
-RpT6PpH9p/v+vbmf7gpVJ+iVjFggK5477ytLtjyrZVhVgXA536ndFOWMqdGdja9w
-BiJ6ZJY3krpNDw6JGccgCG/uG6VLYZMDrwvY6dXQnJMqhExDHv9m1d1PpTblSkpS
-H8VZNd1706y0cq9WSrVlFkujomvssuzFmUrhX0cEphH/NUglUho=
-=0Rod
-- -----END PGP SIGNATURE-----
+Hola dannitaaaaaaaa
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwJQEBVNr2kmNVhwVvOFOfcpzq5sFAmnBYI4ACgkQvOFOfcpz
-q5vz0Q//YZdl+u+rlWxGTIyBGVZ/38JdFTyRzqSH9hr0bdlG2xOZrWrPHuR3feX0
-tHQD1nwUko/XhlGuCd0ehqLZ6lhxI3YjWONXvoSHgitEGeoxQlqwzs39myXiTQ/B
-ol5LJaD1qJ8wxqZl8Y4cOVaGLiHdwrzDjBw1ymgyPThXU8QjyEFk5g1C1Ud+arUL
-j4wRA/wwVwn6KCvbAVdVeMgPZQsKg8tRb20Xtt5nesUZjuqfVL5lL7fQVQFt7YXo
-mVAPrPyJdpUYsq7Dprh4xCLu9kAj4nXck4Fc9Ive7/G4XIOiuJxBFVCMc1V7LUr7
-uxkpMhLnkNScAeE9q/iVc5D4SvXuVCsNQrTwhqCP7Fft79C+fsbYYeYcPbfLNFcY
-R4JJ0YMuq0VHik0Bea+h2rRrBmLrLnB7aUqv9qQvBLozakfErrlwOp723UpBXDgs
-BdMV72tYuT10t+iGJCZn9pMMtSoCZftrNxP71UEPf904ZHelw7ZWHJvQBxLhZnsF
-Cz/Jdo+nYpvZAOxXO90Bz9W1wGIkiq6sDgIFv3Ab8nSvJOiwAAovvlJhsDQYjkCR
-/pcy3338jPrPkIFe3Niwf2cuuCVIo5hB0j0RePSWqQ+yntAeINOwE52Tj79NdCYM
-QrifTeVFhy2NlWmiwJ/5si64enjZK6pC9NyB4Pdu9KHNfcDzmfI=
-=BKA2
+iQIzBAEBCgAdFiEEiKdIeoKEIhbABWIiLbXjffMX0w8FAmnEjwsACgkQLbXjffMX
+0w/Lng//Yo238H93Ud10ZOVB4hr+/O7LP1foMeflGBjB2mQSO+lF6IfoKstrO7ks
+kOMgZVN6Y+lsb7TI30AZFAejokXmduHkiki8yNVsOtKd8aEIamiiNCtS0cJWYuET
+FypndQFB4pJuPZ/4WXt1xh2bql5In4Hg1OcPXHJc/Yrvvo56SuhMhnBNGbeFHHkb
+Zn0WkasFrn1mYxsatu1qKGvsjePn+wt7F2SQnhfWHmpg+M3bWX0760otVXyyCNec
+FRSYr3K/R7qmNhKx37V+J30eafzfsHKWwMXrJ/l1mIhMVyzB5wh5jlVxFmUcNYQU
+f02QAMJV+MpyDoZ9q0QBZ4pt1yY5zThE8O+qEGy1PUUBcDK/TW/Ho4CvX/CTtfTA
+Wqqy8LpPwd+Mjnt6AhfL9rcUveCtIw/+bYMFRNRgFMd1d5DIm9f5B+hCNYwaJuta
+2brdqTLzXbfmtKyfISOaMY6mf/Sy4Tl9xKaVX5DzswJjeHcPsh1q1OBK5ySTzVxG
+MZPhuXmE6DdMsdBxkvVGGr3xOJbFvH83q8M3BoKH4iVOBzDHoRo8hRUdqqIupNcd
+bx8Vs56sgczLVOaCy4J6YyKe6g4n7yKLd8qpm4vOedHu6uVKjb/XfeB08Z8BCjv1
+FUTJHOSB0EyIOwJ46lh0FvVfnIi95kgtFZ/PdwJXsHgrPQ5NAlM=
+=IvpP
 -----END PGP SIGNATURE-----
+$ gpg --edit-key 28140176FF2A98AD077AE20F1F0C857FC076602F
+gpg (GnuPG) 2.4.4; Copyright (C) 2024 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
 
+
+pub  rsa4096/1F0C857FC076602F
+     created: 2026-03-20  expires: 2027-03-20  usage: SC  
+     trust: unknown       validity: unknown
+sub  rsa4096/AC240ACED367542D
+     created: 2026-03-20  expires: 2027-03-20  usage: E   
+[ unknown] (1). DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+
+gpg> trust
+pub  rsa4096/1F0C857FC076602F
+     created: 2026-03-20  expires: 2027-03-20  usage: SC  
+     trust: unknown       validity: unknown
+sub  rsa4096/AC240ACED367542D
+     created: 2026-03-20  expires: 2027-03-20  usage: E   
+[ unknown] (1). DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+
+Please decide how far you trust this user to correctly verify other users' keys
+(by looking at passports, checking fingerprints from different sources, etc.)
+
+  1 = I don't know or won't say
+   2 = I do NOT trust
+  3 = I trust marginally
+  4 = I trust fully
+  5 = I trust ultimately
+  m = back to the main menu
+
+Your decision? 4
+$ gpg --sign-key dannaalejandra008@gmail.com
+
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: next trustdb check due at 2027-03-26
+pub  rsa4096/1F0C857FC076602F
+     created: 2026-03-20  expires: 2027-03-20  usage: SC  
+     trust: full          validity: unknown
+sub  rsa4096/AC240ACED367542D
+     created: 2026-03-20  expires: 2027-03-20  usage: E   
+[ unknown] (1). DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+
+
+pub  rsa4096/1F0C857FC076602F
+     created: 2026-03-20  expires: 2027-03-20  usage: SC  
+     trust: full          validity: unknown
+ Primary key fingerprint: 2814 0176 FF2A 98AD 077A  E20F 1F0C 857F C076 602F
+
+     DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+
+This key is due to expire on 2027-03-20.
+Are you sure that you want to sign this key with your
+key "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" (2DB5E37DF317D30F)
+
+Really sign? (y/N) y
