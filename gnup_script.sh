@@ -17,7 +17,7 @@ Pubkey: RSA, ELG, DSA, ECDH, ECDSA, EDDSA
 Cipher: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH,
         CAMELLIA128, CAMELLIA192, CAMELLIA256
 Hash: SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --full-generate-key
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --full-generate-key #we can create a new GPG key
 gpg (GnuPG) 2.4.4; Copyright (C) 2024 g10 Code GmbH
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
