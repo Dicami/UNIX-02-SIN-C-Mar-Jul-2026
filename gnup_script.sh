@@ -230,6 +230,15 @@ bx8Vs56sgczLVOaCy4J6YyKe6g4n7yKLd8qpm4vOedHu6uVKjb/XfeB08Z8BCjv1
 FUTJHOSB0EyIOwJ46lh0FvVfnIi95kgtFZ/PdwJXsHgrPQ5NAlM=
 =IvpP
 -----END PGP SIGNATURE-----
+
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify esposa_doc_no_cifrado_firmado.txt #command checks if the signature of the file is valid
+gpg: Signature made Mon Mar 23 15:44:09 2026 UTC
+gpg:                using RSA key 28140176FF2A98AD077AE20F1F0C857FC076602F
+gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" [full]
+
+
+
+
 $ gpg --edit-key 28140176FF2A98AD077AE20F1F0C857FC076602F
 gpg (GnuPG) 2.4.4; Copyright (C) 2024 g10 Code GmbH
 This is free software: you are free to change and redistribute it.
