@@ -284,10 +284,14 @@ sub  rsa4096/AC240ACED367542D
 
 Really sign? (y/N) y
 
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify doc_no_cifrado_firmado.txt
-gpg: Signature made Thu Mar 26 01:42:35 2026 UTC
-gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
-gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [ultimate]
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify esposa_doc_no_cifrado_firmado.txt #With that command, we verify a signed file.
+gpg: Signature made Mon Mar 23 15:44:09 2026 UTC
+gpg:                using RSA key 28140176FF2A98AD077AE20F1F0C857FC076602F
+gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" [full]
+
+
+
+
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify esposa_doc_no_cifrado_firmado_binario.txt
 gpg: Signature made Thu Mar 26 03:56:01 2026 UTC
