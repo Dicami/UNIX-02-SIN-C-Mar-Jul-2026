@@ -290,7 +290,7 @@ gpg:                using RSA key 28140176FF2A98AD077AE20F1F0C857FC076602F
 gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" [full]
 
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #With that command, we create a binary signed file
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify esposa_doc_no_cifrado_firmado_binario.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify esposa_doc_no_cifrado_firmado_binario.txt #we verify the signature of the binary signed file
 gpg: Signature made Thu Mar 26 03:56:01 2026 UTC
 gpg:                using RSA key 28140176FF2A98AD077AE20F1F0C857FC076602F
 gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" [full]
