@@ -73,7 +73,7 @@ pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
 uid                      DIANA CAMILA VILLAGRAN PARRALES (mi primera llave) <dianacamilux@gmail.com>
 sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
 
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys #we can see our GPG keys
 gpg: checking the trustdb
 gpg: marginals needed: 3  completes needed: 1  trust model: pgp
 gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
