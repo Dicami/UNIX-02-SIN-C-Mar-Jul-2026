@@ -139,18 +139,19 @@ nV64z/R68mSADistuCIaC32WoWcCoYcQyuSUq7IDLYgF3IYjrymBO22iocqu7N/e
 v5BBpTix
 =kFRF
 -----END PGP PUBLIC KEY BLOCK-----
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor  --edianac
-amilux7
-gpg: invalid option "--edianacamilux7"
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --dianacamilux@gmail.com > mi llave_publica.asc 
-gpg: invalid option "--dianacamilux@gmail.com"
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpd --armor  --export dianacamilux@gmail.com > mi llave_publica.asc
-bash: gpd: command not f
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor  --export 
-dianacamilux@gmail.com > mi llave_publica.asc
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ ls
-LICENSE  README.md  calculadora  gnup_script.sh  gnupg_  mi
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long # command, we can see our secret keys
+/home/codespace/.gnupg/pubring.kbx
+----------------------------------
+sec   rsa4096/2DB5E37DF317D30F 2026-03-26 [SC] [expires: 2027-03-26]
+      88A7487A82842216C00562222DB5E37DF317D30F
+uid                 [ultimate] Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
+ssb   rsa4096/2B5ACECD7F399731 2026-03-26 [E] [expires: 2027-03-26]
+
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor  --export dianacamilux@gmail.com > mi llave_publica.asc #command, we export a public key to a file
+sec   rsa4096/2DB5E37DF317D30F 2026-03-26 [SC] [expires: 2027-03-26]
+      88A7487A82842216C00562222DB5E37DF317D30F
+uid                 [ultimate] Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
+ssb   rsa4096/2B5ACECD7F399731 2026-03-26 [E] [expires: 2027-03-26]
 
 #Clase 2
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ $ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
