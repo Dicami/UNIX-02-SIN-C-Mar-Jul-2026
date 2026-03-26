@@ -299,8 +299,7 @@ gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en
 gpg: Signature made Thu Mar 26 16:56:02 2026 UTC
 gpg:                using RSA key 28140176FF2A98AD077AE20F1F0C857FC076602F
 gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" [full]
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient 88A7487A82842216C00562222DB5E37DF317D30F doc_no_cifrado.txt
-�+Z��9�1�
+
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys
 /home/codespace/.gnupg/pubring.kbx
 ----------------------------------
@@ -314,7 +313,7 @@ pub   rsa4096 2026-03-26 [SC] [expires: 2027-03-26]
 uid           [ultimate] Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
 sub   rsa4096 2026-03-26 [E] [expires: 2027-03-26]
 
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient 28140176FF2A98AD077AE20F1F0C857FC076602F doc_no_cifrado.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient 28140176FF2A98AD077AE20F1F0C857FC076602F doc_no_cifrado.txt #This command encrypts and signs the document
 ��$
 ��gT-�q��A����IܳҨ˃�j��KٽJUq4�?n2ZYS�hG2N��X�UgX��>�����v�����S�&�ޞ�2.��b�a�P���J&�lZ��iO4���kW�y�-77IS��ad��7v�ݮ�>�@tSz�k�X�E����Ӹ����L�]��\��c\%ͣ��X�m����M%���{��o!(S�?;}}�Z0\��.ُ|�Z��p���;�bS{�y����t��ekJ�U���X�X7�F˱6���z���O���ݚ�u�n��8����F�9QM�.}u'��2=�ʚm�ލ����؇S�E�'��_�A�Y�1E���JK�#�H�k�")v�Z�(]̝7�F�&�:ºn%5qu��
 �;6� ��1#{F�F%��ϰBX7
