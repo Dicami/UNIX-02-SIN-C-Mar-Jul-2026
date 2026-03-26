@@ -295,8 +295,7 @@ gpg: Signature made Thu Mar 26 03:56:01 2026 UTC
 gpg:                using RSA key 28140176FF2A98AD077AE20F1F0C857FC076602F
 gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" [full]
 
-gpg: verify signatures failed: No such file or directory
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify esposa_firma_separada_doc_no_cifrado.sig esposa_doc_no_cifrado.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify esposa_firma_separada_doc_no_cifrado.sig esposa_doc_no_cifrado.txt #With that command, we verify a detached signature.
 gpg: Signature made Thu Mar 26 16:56:02 2026 UTC
 gpg:                using RSA key 28140176FF2A98AD077AE20F1F0C857FC076602F
 gpg: Good signature from "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" [full]
