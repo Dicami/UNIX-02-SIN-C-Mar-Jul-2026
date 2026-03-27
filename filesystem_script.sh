@@ -592,3 +592,16 @@ bin.usr-is-merged/  dev/   go/   lib@   lib32@              media/  opt/  root/ 
  528250 bin.usr-is-merged   682828 go     397361 lib32               918529 opt    393426 sbin                 131073 tmp  1572867 workspaces
  393224 boot                918514 home   393414 lib64                    1 proc   531391 sbin.usr-is-merged   918542 usr
       1 dev       
+@Dicami ➜ ~ $ sudo echo "Hola dannita" > test.txt #we create a new comment
+@Dicami ➜ ~ $ cat test.txt #we can see the content 
+Hola dannita
+@Dicami ➜ ~ $ stat test.txt # shows detail information
+  File: test.txt
+  Size: 13              Blocks: 8          IO Block: 4096   regular file
+Device: 0,45    Inode: 715057      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-03-27 15:53:50.631744674 +0000
+Modify: 2026-03-27 15:53:38.117744449 +0000
+Change: 2026-03-27 15:53:38.117744449 +0000
+ Birth: 2026-03-27 15:53:38.105744449 +0000
+@Dicami ➜ ~ $ 
