@@ -568,3 +568,15 @@ doc_cifrado_y_firmado.txt  esposa_doc_cifrado.txt                            esp
 @Dicami ➜ /bin $ ls | grep "saludo"
 saludo_bin #we can see that the command was create
 @Dicami ➜ /bin $ 
+@Dicami ➜ /bin $ ls | grep "saludo"
+saludo_bin
+@Dicami ➜ /bin $ cd /home #we change to directory
+@Dicami ➜ /home $ saludo_bin #we are in the directory and the we compile 
+Holaaa Dannaaaa
+@Dicami ➜ /home $ ls #we list the archive
+codespace  vscode
+@Dicami ➜ /home $ cd codespace/ #we change the directory   
+@Dicami ➜ ~ $ ls #we list the archive
+java  nvm
+@Dicami ➜ ~ $ saludo_bin
+Holaaa Dannaaaa
