@@ -580,3 +580,6 @@ codespace  vscode
 java  nvm
 @Dicami ➜ ~ $ saludo_bin
 Holaaa Dannaaaa
+#Print Working directory
+@Dicami ➜ ~ $ pwd
+/home/codespace #para saber en que directorio estoy
