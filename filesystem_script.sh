@@ -583,3 +583,12 @@ Holaaa Dannaaaa
 #Print Working directory
 @Dicami ➜ ~ $ pwd
 /home/codespace #para saber en que directorio estoy
+@Dicami ➜ ~ $ cd / #we change the directory
+@Dicami ➜ / $ ls -F #we list our archive
+bin@                boot/  etc/  home/  lib.usr-is-merged/  lib64@  mnt/  proc/  run/   sbin.usr-is-merged/  sys/  usr/  vscode/
+bin.usr-is-merged/  dev/   go/   lib@   lib32@              media/  opt/  root/  sbin@  srv/                 tmp/  var/  workspaces/
+@Dicami ➜ / $ ls -i #we list our archives
+ 393223 bin                 714605 etc    397360 lib.usr-is-merged   393416 mnt    681888 run                       1 sys  2069238 vscode
+ 528250 bin.usr-is-merged   682828 go     397361 lib32               918529 opt    393426 sbin                 131073 tmp  1572867 workspaces
+ 393224 boot                918514 home   393414 lib64                    1 proc   531391 sbin.usr-is-merged   918542 usr
+      1 dev       
