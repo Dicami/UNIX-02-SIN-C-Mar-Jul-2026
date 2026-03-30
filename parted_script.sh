@@ -9,3 +9,5 @@ Sector size (logical/physical): 512B/4096B
 Partition Table: gpt
 Disk Flags: 
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ lsblk -f #With that command we can se the second part of our partition table 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS" #With that command #With that command is for verify if the file exist 
+BIOS 
