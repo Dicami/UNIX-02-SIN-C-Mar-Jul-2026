@@ -58,3 +58,9 @@ Access: (0777/drwxrwxrwx)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
 Access: 2026-04-08 21:08:31.403880850 +0000
 Modify: 2026-04-08 21:08:31.402880850 +0000
 Change: 2026-04-08 21:08:31.402880850 +0000
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/proyecto (boot) $ cd #change directory to home directory from anywhere and 
+@Dicami ➜ ~ $ pwd  
+/home/codespace
+@Dicami ➜ ~ $ cd /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/proyecto/ #move to gome directory with absolute route
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/proyecto (boot) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot) $ cd /home/codespace #move to directory in a short way
