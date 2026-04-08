@@ -49,3 +49,12 @@ total 16
 1572918 -rw-rw-rw-  1 codespace root   38 Apr  8 21:01 app.py
 1572919 -rw-rw-rw-  1 codespace root   32 Apr  8 21:01 suma.py
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (boot) $  ls -l -a -i #is the same of ls lai but in a long way
+#We can se detail directory information like Inode, links, size 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/proyecto (boot) $ stat .
+  File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 7,4     Inode: 1572988     Links: 2
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-04-08 21:08:31.403880850 +0000
+Modify: 2026-04-08 21:08:31.402880850 +0000
+Change: 2026-04-08 21:08:31.402880850 +0000
