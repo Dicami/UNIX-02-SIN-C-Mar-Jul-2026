@@ -64,3 +64,71 @@ Change: 2026-04-08 21:08:31.402880850 +0000
 @Dicami ➜ ~ $ cd /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/proyecto/ #move to gome directory with absolute route
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/proyecto (boot) $ 
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot) $ cd /home/codespace #move to directory in a short way
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/proyecto (boot) $ cd $HOME #we change to our repository using enviroment variable
+@Dicami ➜ ~ $ echo $BASH #Show the path to the Bash program you are using
+/bin/bash
+@Dicami ➜ ~ $ whoami # Shows the user you are currently working with
+codespace
+@Dicami ➜ ~ $ sudo su
+root ➜ /home/codespace $ 
+root ➜ /home/codespace $ whoami
+root
+root ➜ /home/codespace $ ls -lt
+total 0
+root ➜ /home/codespace $ man ls #our ls manual 
+root ➜ /home/codespace $ ls /dev | head -7 #we list the 7 first files
+autofs
+bsg
+btrfs-control
+core
+cpu_dma_latency
+cuse
+dma_heap
+root ➜ /home/codespace $ ls /etc  #we list our configurate
+ODBCDataSources         gdb            magic           rmt
+PackageKit              gitconfig      magic.mime      rpc
+X11                     gnutls         mailcap         rvmrc
+adduser.conf            gprofng.rc     mailcap.order   security
+alternatives            groff          manpath.config  selinux
+apache2                 group          mime.types      services
+apparmor.d              group-         mke2fs.conf     sgml
+apt                     gshadow        modules-load.d  shadow
+bash.bashrc             gshadow-       mtab            shadow-
+bash_completion         gss            mysql           shells
+bash_completion.d       host.conf      nanorc          skel
+bindresvport.blacklist  hostname       netconfig       ssh
+binfmt.d                hosts          networks        ssl
+ca-certificates         hosts.allow    nsswitch.conf   subgid
+ca-certificates.conf    hosts.deny     odbc.ini        subgid-
+cloud                   init.d         odbcinst.ini    subuid
+credstore               inputrc        opt             subuid-
+credstore.encrypted     iproute2       os-release      sudo.conf
+cron.d                  issue          pam.conf        sudo_logsrvd.conf
+cron.daily              issue.net      pam.d           sudoers
+cron.weekly             kernel         passwd          sudoers.d
+csh.login               ld.so.cache    passwd-         sysctl.conf
+dbus-1                  ld.so.conf     perl            sysctl.d
+debconf.conf            ld.so.conf.d   polkit-1        systemd
+debian_version          legal          profile         terminfo
+debuginfod              libaudit.conf  profile.d       timezone
+default                 libnl-3        protocols       tmpfiles.d
+deluser.conf            lighttpd       python3         ucf.conf
+docker                  locale.alias   python3.12      ufw
+dpkg                    locale.conf    rc0.d           update-motd.d
+e2scrub.conf            locale.gen     rc1.d           vconsole.conf
+emacs                   localtime      rc2.d           vim
+environment             logcheck       rc3.d           wgetrc
+ethertypes              login.defs     rc4.d           xattr.conf
+fish                    logrotate.d    rc5.d           xdg
+fonts                   lsb-release    rc6.d           xml
+fstab                   lynx           rcS.d           zsh
+gai.conf                machine-id     resolv.conf
+root ➜ /home/codespace $ ls /etc | tail-5
+bash: tail-5: command not found
+root ➜ /home/codespace $ ls /etc | tail -5 #we list the last 5 files
+wgetrc
+xattr.conf
+xdg
+xml
+zsh
+root ➜ /home/codespace $ ls -al
