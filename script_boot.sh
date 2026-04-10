@@ -81,7 +81,7 @@ autofs
 bsg
 btrfs-control
 core
-cpu_dma_latency
+cpu_dma_latenc
 cuse
 dma_heap
 root ➜ /home/codespace $ ls /etc  #we list our configurate
