@@ -260,3 +260,136 @@ total 148
 -rw-rw-rw-  1 codespace root      34523 Apr 17 14:09 LICENSE #The first group is for see the type of the file, the second group is for permissions for users, the third group is read, write and execute  and the last permissions for others
 
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch script.sh #We create a file
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l #We list our files
+total 148
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:09 LICENSE
+-rw-rw-rw-  1 codespace root         53 Apr 17 14:09 README.md
+-rw-rw-rw-  1 codespace codespace 18871 Apr 17 14:51 boot_exploration.sh
+drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:09 calculadora
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1221 Apr 17 14:09 doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 doc_cifrado_y_firrmado_descifrado_y_validado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:09 doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        902 Apr 17 14:09 doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        634 Apr 17 14:09 doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        632 Apr 17 14:09 esposa_doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1217 Apr 17 14:09 esposa_doc_cifrado_y_firmadoo.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 esposa_doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        898 Apr 17 14:09 esposa_doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 esposa_doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 esposa_firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root      20493 Apr 17 14:09 gnup_script.sh
+-rw-rw-rw-  1 codespace root          0 Apr 17 14:09 gnupg_
+-rw-rw-rw-  1 codespace root       3235 Apr 17 14:09 llave_esposa_publica.asc
+-rw-rw-rw-  1 codespace root       3195 Apr 17 14:09 llave_publica.asc
+-rw-rw-rw-  1 codespace codespace     0 Apr 17 14:55 script.sh #We can see the permissions
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod +x script.sh #We are adding the excecute permissions
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
+total 148
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:09 LICENSE
+-rw-rw-rw-  1 codespace root         53 Apr 17 14:09 README.md
+-rw-rw-rw-  1 codespace codespace 18871 Apr 17 14:51 boot_exploration.sh
+drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:09 calculadora
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1221 Apr 17 14:09 doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 doc_cifrado_y_firrmado_descifrado_y_validado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:09 doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        902 Apr 17 14:09 doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        634 Apr 17 14:09 doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        632 Apr 17 14:09 esposa_doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1217 Apr 17 14:09 esposa_doc_cifrado_y_firmadoo.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 esposa_doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        898 Apr 17 14:09 esposa_doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 esposa_doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 esposa_firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root      20493 Apr 17 14:09 gnup_script.sh
+-rw-rw-rw-  1 codespace root          0 Apr 17 14:09 gnupg_
+-rw-rw-rw-  1 codespace root       3235 Apr 17 14:09 llave_esposa_publica.asc
+-rw-rw-rw-  1 codespace root       3195 Apr 17 14:09 llave_publica.asc
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh #We can see here
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch secreto.txt #We create another file
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod o-r secreto.txt #We are adding read permission to other
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l #It shows our files
+total 152
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:09 LICENSE
+-rw-rw-rw-  1 codespace root         53 Apr 17 14:09 README.md
+-rw-rw-rw-  1 codespace codespace 22787 Apr 17 14:58 boot_exploration.sh
+drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:09 calculadora
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1221 Apr 17 14:09 doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 doc_cifrado_y_firrmado_descifrado_y_validado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:09 doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        902 Apr 17 14:09 doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        634 Apr 17 14:09 doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        632 Apr 17 14:09 esposa_doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1217 Apr 17 14:09 esposa_doc_cifrado_y_firmadoo.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 esposa_doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        898 Apr 17 14:09 esposa_doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 esposa_doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 esposa_firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root      20493 Apr 17 14:09 gnup_script.sh
+-rw-rw-rw-  1 codespace root          0 Apr 17 14:09 gnupg_
+-rw-rw-rw-  1 codespace root       3235 Apr 17 14:09 llave_esposa_publica.asc
+-rw-rw-rw-  1 codespace root       3195 Apr 17 14:09 llave_publica.asc
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
+-rw-rw--w-  1 codespace codespace     0 Apr 17 14:59 secreto.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch privado #We are creating another file
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l #It shows our files
+total 152
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:09 LICENSE
+-rw-rw-rw-  1 codespace root         53 Apr 17 14:09 README.md
+-rw-rw-rw-  1 codespace codespace 22798 Apr 17 15:00 boot_exploration.sh
+drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:09 calculadora
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1221 Apr 17 14:09 doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 doc_cifrado_y_firrmado_descifrado_y_validado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:09 doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        902 Apr 17 14:09 doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        634 Apr 17 14:09 doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        632 Apr 17 14:09 esposa_doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1217 Apr 17 14:09 esposa_doc_cifrado_y_firmadoo.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 esposa_doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        898 Apr 17 14:09 esposa_doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 esposa_doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 esposa_firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root      20493 Apr 17 14:09 gnup_script.sh
+-rw-rw-rw-  1 codespace root          0 Apr 17 14:09 gnupg_
+-rw-rw-rw-  1 codespace root       3235 Apr 17 14:09 llave_esposa_publica.asc
+-rw-rw-rw-  1 codespace root       3195 Apr 17 14:09 llave_publica.asc
+-rw-rw-rw-  1 codespace codespace     0 Apr 17 15:00 privado
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
+-rw-rw--w-  1 codespace codespace     0 Apr 17 14:59 secreto.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod u+rw,go-rwx privado #We are adding permissions read and writh and we are remove write and excecute permission
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
+total 152
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:09 LICENSE
+-rw-rw-rw-  1 codespace root         53 Apr 17 14:09 README.md
+-rw-rw-rw-  1 codespace codespace 22815 Apr 17 15:00 boot_exploration.sh
+drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:09 calculadora
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1221 Apr 17 14:09 doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 doc_cifrado_y_firrmado_descifrado_y_validado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:09 doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        902 Apr 17 14:09 doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        634 Apr 17 14:09 doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        632 Apr 17 14:09 esposa_doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1217 Apr 17 14:09 esposa_doc_cifrado_y_firmadoo.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:09 esposa_doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        898 Apr 17 14:09 esposa_doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:09 esposa_doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 esposa_firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:09 firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root      20493 Apr 17 14:09 gnup_script.sh
+-rw-rw-rw-  1 codespace root          0 Apr 17 14:09 gnupg_
+-rw-rw-rw-  1 codespace root       3235 Apr 17 14:09 llave_esposa_publica.asc
+-rw-rw-rw-  1 codespace root       3195 Apr 17 14:09 llave_publica.asc
+-rw-------  1 codespace codespace     0 Apr 17 15:00 privado
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
+-rw-rw--w-  1 codespace codespace     0 Apr 17 14:59 secreto.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
