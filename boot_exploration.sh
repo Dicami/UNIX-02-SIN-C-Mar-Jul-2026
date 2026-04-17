@@ -92,3 +92,18 @@ drwxrwxrwx+ 2 codespace root      4.0K Apr 17 14:09 calculadora
 -rw-rw-rw-  1 codespace root         0 Apr 17 14:09 gnupg_
 -rw-rw-rw-  1 codespace root      3.2K Apr 17 14:09 llave_esposa_publica.asc
 -rw-rw-rw-  1 codespace root      3.2K Apr 17 14:09 llave_publica.asc
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir -- -rf #With that command we create a folder and we add -- for the command dont take that like an opcion
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls #It shows our files
+-rf                  doc_cifrado.txt                                   doc_no_cifrado_firmado_binario.txt  esposa_doc_no_cifrado_firmado_binario.txt  llave_esposa_publica.asc
+LICENSE              doc_cifrado_y_firmado.txt                         esposa_doc_cifrado.txt              esposa_firma_separada_doc_no_cifrado.sig   llave_publica.asc
+README.md            doc_cifrado_y_firrmado_descifrado_y_validado.txt  esposa_doc_cifrado_y_firmadoo.txt   firma_separada_doc_no_cifrado.sig
+boot_exploration.sh  doc_no_cifrado.txt                                esposa_doc_no_cifrado.txt           gnup_script.sh
+calculadora          doc_no_cifrado_firmado.txt                        esposa_doc_no_cifrado_firmado.txt   gnupg_
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ rmdir -- -rf #We remove the file that we create 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls #It shows our files
+LICENSE              doc_cifrado_y_firmado.txt                         esposa_doc_cifrado.txt                     esposa_firma_separada_doc_no_cifrado.sig  llave_publica.asc
+README.md            doc_cifrado_y_firrmado_descifrado_y_validado.txt  esposa_doc_cifrado_y_firmadoo.txt          firma_separada_doc_no_cifrado.sig
+boot_exploration.sh  doc_no_cifrado.txt                                esposa_doc_no_cifrado.txt                  gnup_script.sh
+calculadora          doc_no_cifrado_firmado.txt                        esposa_doc_no_cifrado_firmado.txt          gnupg_
+doc_cifrado.txt      doc_no_cifrado_firmado_binario.txt                esposa_doc_no_cifrado_firmado_binario.txt  llave_esposa_publica.asc
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
