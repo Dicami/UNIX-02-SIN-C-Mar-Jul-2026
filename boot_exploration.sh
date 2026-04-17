@@ -247,5 +247,11 @@ GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
 Report any translation bugs to <https://translationproject.org/team/>
 Full documentation <https://www.gnu.org/software/coreutils/ls>
 or available locally via: info '(coreutils) ls invocation'
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ man ls #We can see the manual we can browse with the letter n and N
-@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ man ls #We can see the manual we can browse with the letter n to go forward  and N to go back and for exit the latter q and with / we can search something 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ #We enter with man git-clone and we browse with n Latter and we find the depth
+ --depth <depth>
+           Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the
+           histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
+
+       --shallow-since=<date>
+           Create a shallow clone with a history after the specified time.
