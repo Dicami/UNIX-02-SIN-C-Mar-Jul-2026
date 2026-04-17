@@ -255,3 +255,8 @@ or available locally via: info '(coreutils) ls invocation'
 
        --shallow-since=<date>
            Create a shallow clone with a history after the specified time.
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l #Whe can see the type of the file, we can see 
+total 148
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:09 LICENSE #The first group is for see the type of the file, the second group is for permissions for users, the third group is read, write and execute  and the last permissions for others
+
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
