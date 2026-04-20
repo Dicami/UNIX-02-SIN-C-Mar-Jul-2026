@@ -396,3 +396,7 @@ drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:09 calculadora
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo echo "hola" > /ect/archivo_protegido #This command doent fix becuase just it fixing in the echo and sudo in not  function in the rest of the command 
 bash: /ect/archivo_protegido: No such file or directory
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "hola" | sudo tee /etc/archivo_protegido > /dev/null #With ths command  we send the message Hola with echo to archivo_protegigo but we are putting dev null and for this reason we cant see in the secreen
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "hola" | sudo tee /etc/archivo_protegido #We are sending the message hola with echo but we are not útting dev/null and for this reason we can see the message Hola in the secreen
+hola
