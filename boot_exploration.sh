@@ -393,3 +393,6 @@ drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:09 calculadora
 -rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
 -rw-rw--w-  1 codespace codespace     0 Apr 17 14:59 secreto.txt
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo echo "hola" > /ect/archivo_protegido #This command doent fix becuase just it fixing in the echo and sudo in not  function in the rest of the command 
+bash: /ect/archivo_protegido: No such file or directory
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
