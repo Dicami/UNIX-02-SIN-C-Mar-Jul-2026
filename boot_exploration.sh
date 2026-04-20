@@ -442,3 +442,11 @@ Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
 E: Unable to locate package cowsay
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch prueba.txt #We create a file with the name prueba.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod 600 prueba.txt #We are giving permission now with numbers to prueba.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l prueba.txt #We list our permission
+-rw------- 1 codespace codespace 0 Apr 20 15:31 prueba.txt #We can see the file just have read and write execute
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod 755 prueba.txt #We change the permission 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l prueba.txt #We list again to see our permission 
+-rwxr-xr-x 1 codespace codespace 0 Apr 20 15:31 prueba.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
