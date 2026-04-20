@@ -417,3 +417,16 @@ $HOME
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "$BASH" #Now with bash 
 /bin/bash
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo '#!/bin/sh' > hola.sh #We are wrinting #!/bin to hola
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo 'echo "Holaa te amo Danna la mejor"' >> hola.sh #We are adding more texting with double >>
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ cat hola.sh
+#!/bin/sh
+echo "Holaa te amo Danna la mejor"
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ./hola.sh #it give us error because we are running without permissions
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l hola.sh #With ls -l we list hola.sh and we can see the permissions that the it has
+-rw-rw-rw- 1 codespace codespace 45 Apr 20 15:05 hola.sh
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod +x hola.sh #With chmod we are adding execute permission
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l hola.sh #We list the archive and we can see we add execute permission
+-rwxrwxrwx 1 codespace codespace 45 Apr 20 15:05 hola.sh
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ./hola.sh #We can run the command and how we change the permission it run
+Holaa te amo Danna la mejor
