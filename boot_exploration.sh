@@ -400,3 +400,11 @@ bash: /ect/archivo_protegido: No such file or directory
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "hola" | sudo tee /etc/archivo_protegido #We are sending the message hola with echo but we are not útting dev/null and for this reason we can see the message Hola in the secreen
 hola
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ cat /etc/archivo_protegido #With cat we can see the content
+hola
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo sh -c 'echo "chao" >> /etc/archivo_protegido' #We are using sudo sh for permissions and we are adding the message chao with double > and it function to adding chao becuase with just one > is just for rewrite
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $  cat /etc/archivo_protegido #With cat we can see the content of the file
+hola
+chao
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
