@@ -430,3 +430,15 @@ echo "Holaa te amo Danna la mejor"
 -rwxrwxrwx 1 codespace codespace 45 Apr 20 15:05 hola.sh
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ./hola.sh #We can run the command and how we change the permission it run
 Holaa te amo Danna la mejor
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls /etc #We list our configurate files
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch /etc/prueba.txt #tHE PERMISSION WAS DENIED so we fix with
+touch: cannot touch '/etc/prueba.txt': Permission denied 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo touch /etc/prueba.txt #We fix with sudo
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir ~/mi_carpeta #We are creating a file with mkdir
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ apt install cowsay #The permission was denied so we fix with sudo
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo apt install cowsay #Now we intsall with sudo 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package cowsay
