@@ -464,3 +464,12 @@ E: Unable to locate package cowsay
    23 sudo chown -R $(whoami) . #With that command we change the owner 
    24 sudo setfacl -bnR .
    
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ umask 027 #How we solve the problem with the command we run before
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch archivo2 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir directorio2
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l "directorio2"
+total 0
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l archivo2 #like we execute this command before the process is that it made a subtraction with the permission subtracting to even numbers
+-rw-r----- 1 codespace codespace 0 Apr 27 15:20 archivo2  #We can see that permission change
+drwxr-x--- 2 codespace codespace  4096 Apr 27 15:20  directorio2
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
