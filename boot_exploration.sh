@@ -450,3 +450,17 @@ E: Unable to locate package cowsay
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l prueba.txt #We list again to see our permission 
 -rwxr-xr-x 1 codespace codespace 0 Apr 20 15:31 prueba.txt
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ umask #With that command give us permission for default
+0022
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch archivo 1 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir "directorio 1"
+#A point important that the teacher give us is not use for all IA becuase if we dont know the command that IA is giving us and just run command it not a help it can confused us, 
+#for this reason is better to search in google like Stack overflow its better because here we serach problems that people had and with them experience we can solve the problems
+#that we have like running commands 
+#Another point is that we can solve a lot of problems like development searching porblems that the code have and in Github do a pull request with the solution
+20  sudo apt-get update
+   21  sudo apt-get upgrade #We search the problems in Stack overflow and give us the solution without using IA
+   22  sudo apt-get install acl
+   23 sudo chown -R $(whoami) . #With that command we change the owner 
+   24 sudo setfacl -bnR .
+   
