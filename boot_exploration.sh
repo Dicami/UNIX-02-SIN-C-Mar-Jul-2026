@@ -473,3 +473,9 @@ total 0
 -rw-r----- 1 codespace codespace 0 Apr 27 15:20 archivo2  #We can see that permission change
 drwxr-x--- 2 codespace codespace  4096 Apr 27 15:20  directorio2
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ umask 077 #With that command we have the permission like user have 0 permission, the number 7 all permission and other all permission like read, write execute
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch secretoo.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir privadoo
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
+-rw------- 1 codespace codespace     0 Apr 27 15:27  secretoo.txt #Now we can see the permission change subtracting to even numbers
+drwx------ 2 codespace codespace  4096 Apr 27 15:28  privadoo #Now we can see the permission change subtracting to even numbers
