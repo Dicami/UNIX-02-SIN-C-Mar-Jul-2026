@@ -479,3 +479,20 @@ drwxr-x--- 2 codespace codespace  4096 Apr 27 15:20  directorio2
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
 -rw------- 1 codespace codespace     0 Apr 27 15:27  secretoo.txt #Now we can see the permission change subtracting to even numbers
 drwx------ 2 codespace codespace  4096 Apr 27 15:28  privadoo #Now we can see the permission change subtracting to even numbers
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ umask 022 #WE change the umask to 022
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ whoami #with that command we ask what is my user and now we know is codespac
+codespace
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "holi" > mii_archivo #we create and archive
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l mii_archivo #we list our permission
+-rw-r--r-- 1 codespace codespace 5 Apr 27 15:37 mii_archivo
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ useradd -m -s /usr/bin/zsh luna # we are adding a user and with -m we are giving to lune a directory to home 
+useradd: Permission denied. #we needed a sudo
+useradd: cannot lock /etc/passwd; try again later.
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo useradd -m -s /usr/bin/zsh luna #with sudo we can did that
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls /home  #we list our home
+codespace  luna  vscode
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l mii_archivo  #We list our permission
+-rw-r--r-- 1 codespace codespace 5 Apr 27 15:37 mii_archivo
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo chown luna mii_archivo #We change the owner 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l mii_archivo
+-rw-r--r-- 1 luna codespace 5 Apr 27 15:37 mii_archivo #And we know the owner user change to luna
