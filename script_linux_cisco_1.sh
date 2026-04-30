@@ -113,3 +113,24 @@ There really are no Easter Eggs in this program.
 Didn't I already tell you that there are no Easter Eggs in this program?
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ aptitude -vvv moo
 Stop it!
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ pwd #With that command, we print our current directory
+/workspaces/UNIX-02-SIN-C-Mar-Jul-2026
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd calculadora #With cd we change to directory
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cd / # With "/", we change the directory to the root
+@Dicami ➜ / $ 
+@Dicami ➜ / $ cd /home/codespace ## We change to our home directory
+@Dicami ➜ ~ $ pwd #shows the current directory
+/home/codespace
+@Dicami ➜ ~ $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd calculadora #With cd, a relative path does not start with "/", and changes directory from the current location
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ 
+
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cd ..
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd calculadora/suma #We navigate to the "suma" subdirectory using a relative path and confirm it with pwd
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora/suma (linux_cisco_1) $ pwd
+/workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora/suma
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora/suma (linux_cisco_1) $ cd .. #with ".." refers to the parent directory; cd .. moves one level up
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cd ~ #With "~" represents the home directory; cd ~ returns to it
+@Dicami ➜ ~ $ 
