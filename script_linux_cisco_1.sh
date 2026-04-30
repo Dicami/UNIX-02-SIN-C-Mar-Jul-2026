@@ -19,3 +19,7 @@ gnup_script.sh
 gnupg_
 llave_esposa_publica.asc
 llave_publica.asc
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls calculadora #If the ls command is given a directory name as an argument, it will return a list of the contents of that directory. 
+app.py  suma.py 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ aptitude moo #Linux is open source and includes fun hidden features
+There are no Easter Eggs in this program. #For example, 'aptitude moo' shows an easter egg
