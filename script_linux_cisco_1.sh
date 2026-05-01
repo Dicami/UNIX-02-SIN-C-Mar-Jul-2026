@@ -306,3 +306,8 @@ EOF
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/camb (linux_cisco_1) $ cp ../calculadora/cami.sh . #As the course says, we copy cami.sh to another directory
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/camb (linux_cisco_1) $ ls #With ls we check that directory was copy 
 cami.sh
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/camb (linux_cisco_1) $ cd ..
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ dd if=/dev/zero of=archivo_prueba bs=1M count=1 #This command creates a 1 MB file filled with zeros using the specified parameters
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.00388649 s, 270 MB/s
