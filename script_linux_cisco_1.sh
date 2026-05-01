@@ -134,3 +134,75 @@ Stop it!
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ 
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cd ~ #With "~" represents the home directory; cd ~ returns to it
 @Dicami ➜ ~ $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls #We list our archives
+LICENSE                                           esposa_doc_no_cifrado.txt
+README.md                                         esposa_doc_no_cifrado_firmado.txt
+calculadora                                       esposa_doc_no_cifrado_firmado_binario.txt
+doc_cifrado.txt                                   esposa_firma_separada_doc_no_cifrado.sig
+doc_cifrado_y_firmado.txt                         firma_separada_doc_no_cifrado.sig
+doc_cifrado_y_firrmado_descifrado_y_validado.txt  gnup_script.sh
+doc_no_cifrado.txt                                gnupg_
+doc_no_cifrado_firmado.txt                        llave_esposa_publica.asc
+doc_no_cifrado_firmado_binario.txt                llave_publica.asc
+esposa_doc_cifrado.txt                            script_linux_cisco_1.sh
+esposa_doc_cifrado_y_firmadoo.txt
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $  ls -l /var/log/ #To get detailed file information (type, permissions, ownership, timestamps),
+total 584
+lrwxrwxrwx 1 root root                39 Mar 11 11:59 README -> ../../usr/share/doc/systemd/README.logs #use ls -l. Example: listing the /var/log directory
+-rw-r--r-- 1 root root             25791 Apr 30 21:53 alternatives.log
+drwxr-xr-x 1 root root              4096 Apr 30 21:53 apt
+-rw-r--r-- 1 root root             61229 Feb 10 14:05 bootstrap.log
+-rw-rw---- 1 root utmp                 0 Feb 10 14:05 btmp
+-rw-r--r-- 1 root root            485140 Apr 30 21:53 dpkg.log
+-rw-r--r-- 1 root root                 0 Feb 10 14:05 faillog
+-rw-r--r-- 1 root root               605 Mar 11 11:59 fontconfig.log
+drwxr-sr-x 2 root systemd-journal   4096 Mar 11 11:59 journal
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 lastlog
+drwx------ 2 root root              4096 Mar 11 11:59 private
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 wtmp
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -lt /var/log # Sorts files by timestamp (time)
+total 584
+-rw-r--r-- 1 root root            485140 Apr 30 21:53 dpkg.log
+-rw-r--r-- 1 root root             25791 Apr 30 21:53 alternatives.log
+drwxr-xr-x 1 root root              4096 Apr 30 21:53 apt
+-rw-r--r-- 1 root root               605 Mar 11 11:59 fontconfig.log
+lrwxrwxrwx 1 root root                39 Mar 11 11:59 README -> ../../usr/share/doc/systemd/README.logs
+drwxr-sr-x 2 root systemd-journal   4096 Mar 11 11:59 journal
+drwx------ 2 root root              4096 Mar 11 11:59 private
+-rw-r--r-- 1 root root             61229 Feb 10 14:05 bootstrap.log
+-rw-r--r-- 1 root root                 0 Feb 10 14:05 faillog
+-rw-rw---- 1 root utmp                 0 Feb 10 14:05 btmp
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 lastlog
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 wtmp
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -l -S /var/log #With that command we sorts files by size 
+total 584
+-rw-r--r-- 1 root root            485140 Apr 30 21:53 dpkg.log
+-rw-r--r-- 1 root root             61229 Feb 10 14:05 bootstrap.log
+-rw-r--r-- 1 root root             25791 Apr 30 21:53 alternatives.log
+drwxr-xr-x 1 root root              4096 Apr 30 21:53 apt
+drwxr-sr-x 2 root systemd-journal   4096 Mar 11 11:59 journal
+drwx------ 2 root root              4096 Mar 11 11:59 private
+-rw-r--r-- 1 root root               605 Mar 11 11:59 fontconfig.log
+lrwxrwxrwx 1 root root                39 Mar 11 11:59 README -> ../../usr/share/doc/systemd/README.logs
+-rw-rw---- 1 root utmp                 0 Feb 10 14:05 btmp
+-rw-r--r-- 1 root root                 0 Feb 10 14:05 faillog
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 lastlog
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 wtmp
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -lSr /var/log #Reverses the size sorting order (smallest to largest)
+total 584
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 wtmp
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 lastlog
+-rw-r--r-- 1 root root                 0 Feb 10 14:05 faillog
+-rw-rw---- 1 root utmp                 0 Feb 10 14:05 btmp
+lrwxrwxrwx 1 root root                39 Mar 11 11:59 README -> ../../usr/share/doc/systemd/README.logs
+-rw-r--r-- 1 root root               605 Mar 11 11:59 fontconfig.log
+drwx------ 2 root root              4096 Mar 11 11:59 private
+drwxr-sr-x 2 root systemd-journal   4096 Mar 11 11:59 journal
+drwxr-xr-x 1 root root              4096 Apr 30 21:53 apt
+-rw-r--r-- 1 root root             25791 Apr 30 21:53 alternatives.log
+-rw-r--r-- 1 root root             61229 Feb 10 14:05 bootstrap.log
+-rw-r--r-- 1 root root            485140 Apr 30 21:53 dpkg.log
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -r /var/log  #With that command  lists files in reverse alphabetical order
+wtmp     lastlog  fontconfig.log  dpkg.log  bootstrap.log  alternatives.log
+private  journal  faillog         btmp      apt            README
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ 
