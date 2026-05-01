@@ -237,3 +237,17 @@ app.py  suma  suma.py #With ls we list our archives
 -rwx------ 1 codespace codespace 0 May  1 15:30 cami.sh
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ./cami.sh #We exceute our script
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd calculadora #We change directory
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls -l #We list our permission and all detail information
+total 16
+-rw-rw-rw-  1 codespace root        38 Apr 30 21:32 app.py
+-rwx------  1 codespace codespace    0 May  1 15:30 cami.sh #We can see that the owner of holaa.sh is codespaces
+drw-r-----+ 2 codespace codespace 4096 May  1 15:29 holaa.sh
+drwxrwxrwx+ 2 codespace codespace 4096 Apr 30 22:39 suma
+-rw-rw-rw-  1 codespace root        32 Apr 30 21:32 suma.py
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ sudo useradd -m -s /usr/bin/zsh camiu #So i added a new user because in the curse we were changing the owner 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls /home
+camiu  codespace  vscode #We can see the new user is ready
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ sudo chown camiu holaa.sh #We change the owner
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls -l #we list all detail information from holaa.sh 
+-rwx------  1 codespace codespace    0 May  1 15:30 cami.sh #We can see the owner was changed 
