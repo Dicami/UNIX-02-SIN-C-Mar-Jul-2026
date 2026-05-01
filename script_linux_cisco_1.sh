@@ -251,3 +251,54 @@ camiu  codespace  vscode #We can see the new user is ready
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ sudo chown camiu holaa.sh #We change the owner
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls -l #we list all detail information from holaa.sh 
 -rwx------  1 codespace codespace    0 May  1 15:30 cami.sh #We can see the owner was changed 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls
+app.py  cami.sh  holaa.sh  suma  suma.py
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ echo 'echo "Helou Camiuuuuuuuu "' >> cami.sh #For use the command cat, the archive should have conntet
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cat cami.sh #With cat we know the content of our archive 
+echo "Helou Camiuuuuuuuu" #As a result give us the content of our archive
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cat cami.sh # We list the content; now I have added more information
+A is for Apple
+B is for Bear
+C is for Cat
+D is for Dog
+E is for Elephant
+F is for Flower
+G is for Grapes
+H is for Happy
+I is for Ink
+J is for Juice
+EOF
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ head cami.sh #We display the first part of the content 
+A is for Apple
+B is for Bear
+C is for Cat
+D is for Dog
+E is for Elephant
+F is for Flower
+G is for Grapes
+H is for Happy
+I is for Ink
+J is for Juice
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ tail cami.sh #We display the last part of the content
+B is for Bear
+C is for Cat
+D is for Dog
+E is for Elephant
+F is for Flower
+G is for Grapes
+H is for Happy
+I is for Ink
+J is for Juice
+EOF
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ head -n 5 cami.sh #We display the first 5 lines of the content
+A is for Apple
+B is for Bear
+C is for Cat
+D is for Dog
+E is for Elephant
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ tail -n 5 cami.sh #We display the last 5 lines of the content
+G is for Grapes
+H is for Happy
+I is for Ink
+J is for Juice
+EOF
