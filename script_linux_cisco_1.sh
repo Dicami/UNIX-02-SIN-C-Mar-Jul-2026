@@ -223,3 +223,8 @@ sudo: sl: command not found
 sl: /usr/games/sl /usr/share/man/man6/sl.6.gz #Like result give us /usr/games/sl
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ /usr/games/sl # We run 'sl' using its full path
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ sudo /usr/games/sl #The same with sudo for run this command
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd calculadora #With cd we change to directory
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls 
+app.py  suma  suma.py #With ls we list our archives
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls -l app.py #With ls -l we can see our permission
+-rw-rw-rw- 1 codespace root 38 Apr 30 21:32 app.py
