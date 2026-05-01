@@ -228,3 +228,12 @@ sl: /usr/games/sl /usr/share/man/man6/sl.6.gz #Like result give us /usr/games/sl
 app.py  suma  suma.py #With ls we list our archives
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls -l app.py #With ls -l, we can see file permissions
 -rw-rw-rw- 1 codespace root 38 Apr 30 21:32 app.py bv # Owner: read and write permissions, Group: read and write permissions,Others: read and write permissions
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cd .. #We change to directory
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd calculadora
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls -l cami.sh #We list our permission
+-rw-r----- 1 codespace codespace 0 May  1 15:30 cami.sh
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ chmod a+x cami.sh #We add execute permission to the owner
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ls -l cami.sh
+-rwx------ 1 codespace codespace 0 May  1 15:30 cami.sh
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ ./cami.sh #We exceute our script
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ 
