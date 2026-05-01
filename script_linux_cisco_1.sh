@@ -206,3 +206,20 @@ drwxr-xr-x 1 root root              4096 Apr 30 21:53 apt
 wtmp     lastlog  fontconfig.log  dpkg.log  bootstrap.log  alternatives.log
 private  journal  faillog         btmp      apt            README
 @Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ 
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ su #With su, we enter as superuser (root) and it asks for a password
+Password: 
+root ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ exit #Use exit to leave root and return to the normal user
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ sudo apt install sl -y #We intall sl
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+sl is already the newest version (5.02-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ sl #At first, the console did not recognize the "sl" command
+bash: sl: command not found
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ sudo sl #I thought running it with sudo would work, but the command was still not found
+sudo: sl: command not found
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ whereis sl #So we run this command to find where 'sl is located
+sl: /usr/games/sl /usr/share/man/man6/sl.6.gz #Like result give us /usr/games/sl
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ /usr/games/sl # We run 'sl' using its full path
+@Dicami ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ sudo /usr/games/sl #The same with sudo for run this command
