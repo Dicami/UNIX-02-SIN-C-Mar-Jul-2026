@@ -222,4 +222,4 @@ Run chsh -s /usr/bin/zsh root
 Run cat >> /root/.zshrc <<'EOF'
 PROMPT='%F{cyan}[Camila_Villagran-Dicami-UIDE]%f %F{purple}%1 ~%f %(?.%F{green}okay.%F{red}bad)%f %# '
 EOF
-CMD ["/usr/bin/zsh
+CMD ["/usr/bin/zsh"]
