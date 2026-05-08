@@ -114,3 +114,14 @@ SUB_GID_MIN                100000
 SUB_GID_MAX             600100000
                                                                                                                                                                                 
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # addgroup diseno #With that command we adding a group and using grep -E to find these patters
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # addgroup --gid 2100 marketing 
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # addgroup --system cache_web   
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # grep -E "diseno|cache_web" /etc/group
+diseno:x:1001:
+cache_web:x:102:
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
