@@ -80,5 +80,20 @@ root
 0
                                                                                                                                                                                 
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id -G #Give us all groups Id
-0
-           
+0     
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # mkdir ~/proyecto_unix/ #We create a direcroy since our directory home
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls -la ~/proyecto_unix/ #We list our permissions
+total 8
+drwxr-xr-x 2 root root 4096 may  8 15:06 .
+drwx------ 1 root root 4096 may  8 15:06 ..
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # groupadd desarrolladores #We are adding a new group
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # groupadd -g 2000 operaciones #We are adding an operatyng 
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # groupadd --system servicios_web #We are adding a service web
+
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # grep -E "desarrolladores|operaciones|servicios_web" /etc/group #We are using grep to find these patterns in the /etc/group file 
+desarrolladores:x:1000:
+operaciones:x:2000:
+servicios_web:x:995:
