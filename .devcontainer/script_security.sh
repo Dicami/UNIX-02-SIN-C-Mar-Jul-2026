@@ -41,3 +41,14 @@ mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
 news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
                                                                                                                                                                
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # touch test.txt #With that command we create an archive
+                                                                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls -la #We can see the permission and in what groups 
+total 32
+drwxrwxrwx+ 2 root root 4096 may  8 14:40 .
+drwxrwxrwx+ 4 root root 4096 may  8 14:14 ..
+-rw-rw-rw-  1 root root 7097 may  8 14:14 devcontainer.json
+-rw-rw-rw-  1 root root 9438 may  8 14:19 Dockerfile
+-rw-rw-rw-  1 root root 2511 may  8 14:36 script_security.sh
+-rw-rw-rw-  1 root root    0 may  8 14:40 test.txt #The archive and directory inherit uid gid 
