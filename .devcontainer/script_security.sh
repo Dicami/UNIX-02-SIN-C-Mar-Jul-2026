@@ -97,3 +97,20 @@ drwx------ 1 root root 4096 may  8 15:06 ..
 desarrolladores:x:1000:
 operaciones:x:2000:
 servicios_web:x:995:
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # grep -E "GID_MIN|GID_MAX|SYS_GID" /etc/login.defs #With that command we are usuing grep to find these patters in the /etc/login.defs 
+GID_MIN                  1000
+GID_MAX                 60000
+#SYS_GID_MIN              101
+#SYS_GID_MAX              999
+SUB_GID_MIN                100000
+SUB_GID_MAX             600100000
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+GID_MIN                  1000
+GID_MAX                 60000
+#SYS_GID_MIN              101
+#SYS_GID_MAX              999
+SUB_GID_MIN                100000
+SUB_GID_MAX             600100000
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
