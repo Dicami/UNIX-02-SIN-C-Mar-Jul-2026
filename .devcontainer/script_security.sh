@@ -27,7 +27,7 @@ _apt:x:42:65534::/nonexistent:/usr/sbin/nologin
 nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
 systemd-network:x:997:997:systemd Network Management:/:/usr/sbin/nologin
 debian-tor:x:100:101::/var/lib/tor:/bin/false
-tcpdump:x:996:996:tcpdump:/nonexistent:/usr/sbin/nologin
+tcpdump:x:996:996:tcpdump:/nonexistent:/usr/sbin/nologin]
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # cat /etc/passwd | head -10 #give us the first 10 users with the command head 
 root:x:0:0:root:/root:/usr/bin/zsh
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
