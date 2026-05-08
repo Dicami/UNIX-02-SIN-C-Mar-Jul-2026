@@ -51,4 +51,25 @@ drwxrwxrwx+ 4 root root 4096 may  8 14:14 ..
 -rw-rw-rw-  1 root root 7097 may  8 14:14 devcontainer.json
 -rw-rw-rw-  1 root root 9438 may  8 14:19 Dockerfile
 -rw-rw-rw-  1 root root 2511 may  8 14:36 script_security.sh
--rw-rw-rw-  1 root root    0 may  8 14:40 test.txt #The archive and directory inherit uid gid 
+-rw-rw-rw-  1 root root    0 may  8 14:40 test.txt #The archive and directory inherit uid gid of the root
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # cat /etc/group | head -10 #With that command  we can see all the groups of the system 
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+                                                                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+#If give us error we should see what we have in the variable 
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # groups #groups and groups $USER is the result is the same give us what group we belong
+root
+                                                                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # groups $USER
+root
+                                                                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
