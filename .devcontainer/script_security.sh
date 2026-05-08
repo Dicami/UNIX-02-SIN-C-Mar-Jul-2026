@@ -72,4 +72,13 @@ root
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # groups $USER
 root
                                                                                                                                                                
-[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ #
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id -u  #Give us user ID
+0
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id -g #Group ID principal
+0
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id -G #Give us all groups Id
+0
+           
