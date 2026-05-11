@@ -125,3 +125,14 @@ diseno:x:1001:
 cache_web:x:102:
                                                                                                                                                                                 
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # groups
+root
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id
+uid=0(root) gid=0(root) grupos=0(root)
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # usermod -aG desarrolladores root #We adding to root these users
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # usermod -aG diseno root
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id root #We verify our groups of root
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno)
+                                                                                                                                                                                
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
