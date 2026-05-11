@@ -153,3 +153,8 @@ desarrolladores:x:1000:root
 diseno:x:1001:root 
 desarrolladores:x:1000:root
 diseno:x:1001:root
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # adduser $USER marketing #We know that we have marketing group exits
+fatal: The group `marketing' already exists.
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # adduser root marketing #We are adding the group to root
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id root #We verify that marketing is adding
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(marketing)
