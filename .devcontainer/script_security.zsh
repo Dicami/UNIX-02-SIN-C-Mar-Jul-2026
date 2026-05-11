@@ -1,4 +1,4 @@
-[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id #Whit that command give us the identify of our groups
+Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id #Whit that command give us the identify of our groups
 uid=0(root) gid=0(root) grupos=0(root)
                                                                                                                                                                                 
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
@@ -136,3 +136,20 @@ uid=0(root) gid=0(root) grupos=0(root)
 uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno)
                                                                                                                                                                                 
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # groups  #We are seeding our groups that we created
+root desarrolladores diseno
+                                                                                     
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id #With that command we are seeding our groups with them id that is unique
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno) 
+                                                                                     
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # grep -E "desarrolladores|diseno" /etc/group #[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # groups 
+root desarrolladores diseno
+                                                                                     
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno)
+                                                                                     
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # grep -E "desarrolladores|diseno" /etc/group #With that command  we adding a group and using grep -E to find these patters
+desarrolladores:x:1000:root
+diseno:x:1001:root 
+desarrolladores:x:1000:root
+diseno:x:1001:root
