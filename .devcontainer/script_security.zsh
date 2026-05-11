@@ -171,3 +171,38 @@ uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno) #We ca
 [Camila_Villagran-Dicami-UIDE] ~ 💀💀 # usermod -aG  marketing root  #We adding again the group           
                                                                                                       
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # usermod -aG  grupo_temporal root #We adding the group
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # mkdir -p ~/lab_chgrp/{proyectos,reportes,scripts} #This command creates a main directory called lab_chgrp and three subdirectories inside it: proyectos, reportes, and scripts. 
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # touch ~/lab_chgrp/proyectos/app.py
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # touch ~/lab_chgrp/proyectos/config.json
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # touch ~/lab_chgrp/proyectos/informe.txt
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # touch ~/lab_chgrp/proyectos/deploy.sh  
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls
+devcontainer.json  Dockerfile  script_security.zsh  test.txt
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # ls -la ~/lab_chgrp/proyectos/ ## We verify that lab_chgrp and its files were created with root ownership.
+total 8
+drwxr-xr-x 2 root root 4096 may 11 14:58 .
+drwxr-xr-x 5 root root 4096 may 11 14:57 ..
+-rw-r--r-- 1 root root    0 may 11 14:58 app.py
+-rw-r--r-- 1 root root    0 may 11 14:58 config.json
+-rw-r--r-- 1 root root    0 may 11 14:58 deploy.sh
+-rw-r--r-- 1 root root    0 may 11 14:58 informe.txt
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls -la ~/lab_chgrp/reportes/ 
+total 8
+drwxr-xr-x 2 root root 4096 may 11 14:57 .
+drwxr-xr-x 5 root root 4096 may 11 14:57 ..
+Camila_Villagran-Dicami-UIDE] ~ ✓✓ # chgrp desarrolladores ~/lab_chgrp/proyectos/app.py #With that command we change the group to desarrolladores
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls -la ~/lab_chgrp/proyectos/
+total 8
+drwxr-xr-x 2 root root            4096 may 11 14:58 .
+drwxr-xr-x 5 root root            4096 may 11 14:57 ..
+-rw-r--r-- 1 root desarrolladores    0 may 11 14:58 app.py #We verify that is was changed
+-rw-r--r-- 1 root root               0 may 11 14:58 config.json
+-rw-r--r-- 1 root root               0 may 11 14:58 deploy.sh
+-rw-r--r-- 1 root root               0 may 11 14:58 informe.txt
