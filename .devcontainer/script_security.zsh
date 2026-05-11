@@ -162,3 +162,12 @@ uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(m
                                                                                                       
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id root
 uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(marketing),2101(grupo_temporal) #We verify that the group was created
+
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # usermod -G desarrolladores root #We can verify if we dont use "a" we remove secondary grpups
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno) #We can verify that the others groups was delate
+
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # usermod -aG  marketing root  #We adding again the group           
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # usermod -aG  grupo_temporal root #We adding the group
