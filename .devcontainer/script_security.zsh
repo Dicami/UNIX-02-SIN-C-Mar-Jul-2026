@@ -206,3 +206,21 @@ drwxr-xr-x 5 root root            4096 may 11 14:57 ..
 -rw-r--r-- 1 root root               0 may 11 14:58 config.json
 -rw-r--r-- 1 root root               0 may 11 14:58 deploy.sh
 -rw-r--r-- 1 root root               0 may 11 14:58 informe.txit
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # chgrp diseno ~/lab_chgrp/proyectos/config.json ~/lab_chgrp/reportes/informe.txt #We change the owner
+                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls -la ~/lab_chgrp/proyectos #With that command we verify
+total 8
+drwxr-xr-x 2 root root            4096 may 11 14:58 .
+drwxr-xr-x 5 root root            4096 may 11 14:57 ..
+-rw-r--r-- 1 root desarrolladores    0 may 11 14:58 app.py
+-rw-r--r-- 1 root diseno             0 may 11 14:58 config.json
+-rw-r--r-- 1 root root               0 may 11 14:58 deploy.sh
+-rw-r--r-- 1 root root               0 may 11 14:58 informe.txt
+                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls -la ~/lab_chgrp/reportes #With ls la we verify that the group was changed to reporte
+total 8
+drwxr-xr-x 2 root root   4096 may 11 15:18 .
+drwxr-xr-x 5 root root   4096 may 11 14:57 ..
+-rw-r--r-- 1 root diseno    0 may 11 15:18 informe.txt
+                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
