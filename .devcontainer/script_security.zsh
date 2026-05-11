@@ -224,3 +224,16 @@ drwxr-xr-x 5 root root   4096 may 11 14:57 ..
 -rw-r--r-- 1 root diseno    0 may 11 15:18 informe.txt
                                                                                                                
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # chgrp -R desarrolladores ~/lab_chgrp/scripts/   #We change the group from script to the group desarrolladores                       
+                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls -laR ~/lab_chgrp/scripts/ #We verify that the group was changed
+/root/lab_chgrp/scripts/:
+total 8
+drwxr-xr-x 2 root desarrolladores 4096 may 11 14:57 .
+drwxr-xr-x 5 root root            4096 may 11 14:57 ..
+                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # chgrp -Rv diseno ~/lab_chgrp/reportes/ #With -Rv give us the steps that command use
+el grupo de '/root/lab_chgrp/reportes/informe.txt' permanece como diseno
+cambiado el grupo de '/root/lab_chgrp/reportes/' de root a diseno
+                                                                                                               
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
