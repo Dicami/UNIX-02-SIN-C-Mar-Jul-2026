@@ -158,3 +158,7 @@ fatal: The group `marketing' already exists.
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # adduser root marketing #We are adding the group to root
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id root #We verify that marketing is adding
 uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(marketing)
+[Camila_Villagran-Dicami-UIDE] ~ 💀💀 # usermod -aG grupo_temporal root  #We are adding a new group with the name grupo_termporal
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # id root
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(marketing),2101(grupo_temporal) #We verify that the group was created
