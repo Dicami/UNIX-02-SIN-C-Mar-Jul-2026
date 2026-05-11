@@ -205,4 +205,4 @@ drwxr-xr-x 5 root root            4096 may 11 14:57 ..
 -rw-r--r-- 1 root desarrolladores    0 may 11 14:58 app.py #We verify that is was changed
 -rw-r--r-- 1 root root               0 may 11 14:58 config.json
 -rw-r--r-- 1 root root               0 may 11 14:58 deploy.sh
--rw-r--r-- 1 root root               0 may 11 14:58 informe.txt
+-rw-r--r-- 1 root root               0 may 11 14:58 informe.txit
