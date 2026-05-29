@@ -61,3 +61,36 @@ newgrp: no such group
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ #    
 [Camila_Villagran-Dicami-UIDE] ~ ✓✓ # echo $$ #It give the the procces of subshell
 43854
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # echo $$
+43854
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # exit #With exit we are not in the subshell and its a diferent process
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # echo $$ #Witj echo $$ give us the PIB and its diference 
+1198
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # mkdir -p ~/proyecto_dev/src #We create a directory since home 
+                                                                                                      
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # 
+[Camila_Villagran-Dicami-UIDE] ~ ✓✓ # ls -la ~/ #We see the details
+total 68
+drwx------ 1 root root             4096 may 29 15:49 .
+drwxr-xr-x 1 root root             4096 may 29 14:37 ..
+-rw-r--r-- 1 root root                0 may 29 15:06 antes_de_newgrp.txt
+-rw-r--r-- 1 root root             5578 may 24 04:01 .bashrc
+-rw-r--r-- 1 root root              607 may 24 04:01 .bashrc.original
+drwxr-xr-x 3 root root             4096 may 29 15:41 .cache
+drwx------ 3 root root             4096 may 29 14:38 .config
+-rw-r--r-- 1 root desarrolladores     0 may 29 15:42 despues2_de_newgrp.txt
+-rw-r--r-- 1 root root                0 may 29 15:40 despues_de_newgrp.txt
+lrwxrwxrwx 1 root root               47 may 29 14:37 .docker -> /workspaces/.codespaces/.persistedshare/.docker
+drwxr-xr-x 3 root root             4096 may 29 14:37 .dotnet
+drwx------ 4 root root             4096 may 29 14:37 .local
+-rw-r--r-- 1 root root              132 may 15 11:37 .profile
+drwxr-xr-x 3 root root             4096 may 29 15:49 proyecto_dev
+drwx------ 2 root root             4096 may 29 14:37 .ssh
+-rw-r--r-- 1 root root                0 may 29 14:57 test_grupo_heredado.txt
+drwxr-xr-x 5 root root             4096 may 29 14:37 .vscode-remote
+-rw------- 1 root desarrolladores    44 may 29 15:46 .zsh_history
+-rw-r--r-- 1 root root            11009 may 29 14:37 .zshrc
