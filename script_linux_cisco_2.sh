@@ -32,3 +32,7 @@ rm: cannot remove 'Work': Is a directory   #but it doesnt run
 sysadmin@localhost:~/Documents$ rm -r Work   #If we wanted to remove a directory we have to use a recursive with -r                                   
 sysadmin@localhost:~/Documents$ ls Work     #We used ls                                     
 ls: cannot access Work: No such file or directory    #An we can see that we remove a directory
+
+sysadmin@localhost:~/Documents$  cp /etc/passwd .    #With the command cp we copy the passwd file to Documents directory                           
+sysadmin@localhost:~/Documents$ grep sysadmin passwd #With grep command we can get detail information about an user specific     
+sysadmin:x:1001:1001:System Administrator,,,,:/home/sysadmin:/bin/bash  #We have detail information of sysadmin and passwd we use like an argument
