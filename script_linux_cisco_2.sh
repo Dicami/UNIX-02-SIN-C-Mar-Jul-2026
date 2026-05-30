@@ -36,3 +36,7 @@ ls: cannot access Work: No such file or directory    #An we can see that we remo
 sysadmin@localhost:~/Documents$  cp /etc/passwd .    #With the command cp we copy the passwd file to Documents directory                           
 sysadmin@localhost:~/Documents$ grep sysadmin passwd #With grep command we can get detail information about an user specific     
 sysadmin:x:1001:1001:System Administrator,,,,:/home/sysadmin:/bin/bash  #We have detail information of sysadmin and passwd we use like an argument
+
+#Regular expressions
+#Regular expressions have two types Basic regex is like a standard search tool for finding simple word patterns anywhere.
+#Extended regex is an advanced version with extra powers to do smarter searches, like looking for "this or that"
