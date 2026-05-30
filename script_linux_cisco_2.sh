@@ -23,3 +23,12 @@ School           alpha-second.txt  hidden.txt    os.csv
 Work             alpha-third.txt   linux.txt     profile.txt                    
 adjectives.txt   food.txt          longfile.txt  red.txt                        
 alpha-first.txt  hello.sh          newhome.txt   zoo.txt   
+
+sysadmin@localhost:~/Documents$ rm linux.txt   #With the command rm we remove a file                              
+sysadmin@localhost:~/Documents$ ls linux.txt     #How can i see we used the ls command and said us that the file doesnt exits                                
+ls: cannot access linux.txt: No such file or directory                          
+sysadmin@localhost:~/Documents$ rm Work    #We wanted to remove a directory                                    
+rm: cannot remove 'Work': Is a directory   #but it doesnt run                                     
+sysadmin@localhost:~/Documents$ rm -r Work   #If we wanted to remove a directory we have to use a recursive with -r                                   
+sysadmin@localhost:~/Documents$ ls Work     #We used ls                                     
+ls: cannot access Work: No such file or directory    #An we can see that we remove a directory
