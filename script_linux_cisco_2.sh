@@ -2,4 +2,24 @@ sysadmin@localhost:~/Documents$ cd ~ #We changed to directory home
 sysadmin@localhost:~$ dd if=/dev/zero of=/tmp/swapex bs=1M count=50  #dd creates a file using specific arguments and outputs the process statistics        
 50+0 records in                                                                 
 50+0 records out                                                                
-52428800 bytes (52 MB) copied, 0.0274415 s, 1.9 GB/s   
+52428800 bytes (52 MB) copied, 0.0274415 s, 1.9 GB/s 
+
+sysadmin@localhost:~$ cd ~/Documents  #We changed to out directory Documents                                          
+sysadmin@localhost:~/Documents$ mv people.csv Work #With mv we changed the peoples.csv file to Work                          
+sysadmin@localhost:~/Documents$ ls Work  #With ls it give us details of out directory and we can see that peoples files was moved                                     
+people.csv                                                                      
+sysadmin@localhost:~/Documents$ mv numbers.txt letters.txt alpha.txt School #We can see with that command we moved three files  
+                                                                                
+sysadmin@localhost:~/Documents$ ls School  #We list our files                            
+Art  Engineering  Math  alpha.txt  letters.txt  numbers.txt                     
+sysadmin@localhost:~/Documents$ ls  #Just we list our files                                          
+School           alpha-second.txt  hello.sh      newhome.txt                    
+Work             alpha-third.txt   hidden.txt    os.csv                         
+adjectives.txt   animals.txt       linux.txt     profile.txt                    
+alpha-first.txt  food.txt          longfile.txt  red.txt                        
+sysadmin@localhost:~/Documents$ mv animals.txt zoo.txt #We move a file                          
+sysadmin@localhost:~/Documents$ ls                                              
+School           alpha-second.txt  hidden.txt    os.csv                         
+Work             alpha-third.txt   linux.txt     profile.txt                    
+adjectives.txt   food.txt          longfile.txt  red.txt                        
+alpha-first.txt  hello.sh          newhome.txt   zoo.txt   
