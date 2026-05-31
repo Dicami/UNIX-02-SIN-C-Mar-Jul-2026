@@ -127,3 +127,33 @@ reeed
 reed
 reel
 read
+
+sysadmin@localhost:~$ su -   #We enter like super admin "root"                                                
+Password:                                                                       
+root@localhost:~#
+root@localhost:~# shutdown now  #The shutdown now command initiates an immediate system power-off or halt    
+                                                                                
+Broadcast message from sysadmin@localhost                                       
+        (/dev/pts/0) at 11:34 ...         
+The system is going down for maintenance NOW! 
+                                                                                
+root@localhost:~# date   #Displays the current system date and time                                                
+Sun May 31 11:34:23 UTC 2026                                                    
+root@localhost:~# shutdown 11:35 #shutdown 11:35  #Schedules a system shutdown for a specific time (11:35)                                      
+                                                                                
+Broadcast message from sysadmin@localhost                                       
+        (/dev/pts/0) at 11:34 ...                                               
+                                                                                
+The system is going down for maintenance in 1 minute!                           
+shutdown: Unable to shutdown system     
+root@localhost:~# shutdown +1 "Goodbye World!"  #Schedules a shutdown in 1 minute and sends a custom broadcast message
+
+Broadcast message from sysadmin@localhost                                       
+        (/dev/pts/0) at 11:45 ...                                               
+                                                                                
+The system is going down for maintenance in 1 minute!                           
+Goodbye World!
+
+                                                                                
+
+
