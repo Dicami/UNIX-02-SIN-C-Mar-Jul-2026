@@ -194,4 +194,29 @@ pipe 4
 root@localhost:~# exit  #Exits the root superuser session and returns to the normal user
 logout
 
+sysadmin@localhost:~$ ps        #Displays information about a selection of the active processes in the current terminal
+    PID TTY          TIME CMD                                                   
+     83 pts/0    00:00:00 bash                                                  
+    121 pts/0    00:00:00 ps
+sysadmin@localhost:~$ ps -e      #Lists every active process running on the entire system, including system daemons
+    PID TTY          TIME CMD                                                   
+      1 pts/0    00:00:00 init                                                  
+     13 ?        00:00:00 rsyslogd                                              
+     17 ?        00:00:00 cron                                                  
+     19 ?        00:00:00 sshd                                                  
+     36 ?        00:00:00 named                                                 
+     73 pts/0    00:00:00 login                                                 
+     83 pts/0    00:00:00 bash                                                  
+    122 pts/0    00:00:00 ps
+sysadmin@localhost:~$ ps -ef     #Displays every active process with a full-format listing, showing ownership and parent-child hierarchies
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 11:22 pts/0    00:00:00 /sbin??? /init
+syslog        13       1  0 11:22 ?        00:00:00 /usr/sbin/rsyslogd
+root          17       1  0 11:22 ?        00:00:00 /usr/sbin/cron
+root          19       1  0 11:22 ?        00:00:00 /usr/sbin/sshd
+bind          36       1  0 11:22 ?        00:00:00 /usr/sbin/named -u bind
+root          73       1  0 11:22 pts/0    00:00:00 /bin/login -f
+sysadmin      83      73  0 11:22 pts/0    00:00:00 -bash
+sysadmin     123      83  0 11:57 pts/0    00:00:00 ps -ef
+
 
