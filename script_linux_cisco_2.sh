@@ -219,4 +219,60 @@ root          73       1  0 11:22 pts/0    00:00:00 /bin/login -f
 sysadmin      83      73  0 11:22 pts/0    00:00:00 -bash
 sysadmin     123      83  0 11:57 pts/0    00:00:00 ps -ef
 
+sysadmin@localhost:~$ sudo apt-get update       #Resynchronizes the package index files from their sources via the internet or local repositories
+[sudo] password for sysadmin:                                                   
+Ign file: amd64/ InRelease                                                      
+Ign file: amd64/ Release.gpg                                                    
+Ign file: amd64/ Release                                                        
+Reading package lists... Done
+sysadmin@localhost:~$ sudo apt-get install cowsay       #Installs the cowsay utility using the APT package manager
+Reading package lists... Done                                                   
+Building dependency tree                                                        
+Reading state information... Done                                               
+Suggested packages:                                                             
+  filters                                                                       
+The following NEW packages will be installed:                                   
+  cowsay                                                                        
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.                  
+Need to get 0 B/18.5 kB of archives.                                            
+After this operation, 90.1 kB of additional disk space will be used.            
+Selecting previously unselected package cowsay.                                 
+(Reading database ... 24300 files and directories currently installed.)         
+Preparing to unpack .../cowsay_3.03+dfsg1-6_all.deb ...                         
+Unpacking cowsay (3.03+dfsg1-6) ...                                             
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...                           
+Setting up cowsay (3.03+dfsg1-6) ...
+sysadmin@localhost:~$ cowsay 'NDG Linux Unhatched'   #We just run the command
+ _____________________                                                          
+< NDG Linux Unhatched >                                                         
+ ---------------------                                                          
+        \   ^__^                                                                
+         \  (oo)\_______                                                        
+            (__)\       )\/\                                                    
+                ||----w |                                                       
+                ||     ||
+
+sysadmin@localhost:~$ sudo apt-get update       #Updates the local package index to fetch the latest software lists
+Ign file: amd64/ InRelease                                                      
+Ign file: amd64/ Release.gpg                                                    
+Ign file: amd64/ Release                                                        
+Reading package lists... Done                                                   
+sysadmin@localhost:~$  sudo apt-get upgrade     #Upgrades all currently installed packages to their latest available versions
+Reading package lists... Done                                                   
+Building dependency tree                                                        
+Reading state information... Done                                               
+Calculating upgrade... Done                                                     
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+sysadmin@localhost:~$ sudo apt-get purge cowsay       #Removes the package along with all its configuration files
+Reading package lists... Done                                                   
+Building dependency tree                                                        
+Reading state information... Done                                               
+The following packages will be REMOVED:                                         
+  cowsay* 0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.                  
+After this operation, 90.1 kB disk space will be freed.                         
+Do you want to continue? [Y/n] y                                                
+(Reading database ... 24364 files and directories currently installed.)         
+Removing cowsay (3.03+dfsg1-6) ...                                              
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+
 
