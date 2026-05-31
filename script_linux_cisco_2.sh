@@ -276,3 +276,20 @@ Removing cowsay (3.03+dfsg1-6) ...
 Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
 
 
+sysadmin@localhost:~$ passwd        #Changes the password for the current user safely by validating old and new credentials
+Changing password for sysadmin.                                                 
+(current) UNIX password:                                                       
+Enter new UNIX password:                                                       
+Retype new UNIX password:                                                       
+passwd: password updated successfully
+sysadmin@localhost:~$ passwd -S sysadmin        #Displays password status information for the specified user account
+sysadmin P 12/20/2017 0 99999 7 -1
+sysadmin@localhost:~$ su root        #Switches to the root user account while preserving the current environment variables
+Password:
+root@localhost:~# passwd sysadmin        #Changes the password for another user without requiring their current password
+Enter new UNIX password:                                                        
+Retype new UNIX password:                                                       
+passwd: password updated successfully                                           
+root@localhost:~# exit  #Exits the root session and returns to the normal user shell
+exit
+
