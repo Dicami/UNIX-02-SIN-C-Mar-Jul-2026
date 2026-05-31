@@ -311,3 +311,9 @@ sysadmin@localhost:~/Documents$  echo "This food is good." >> newfile1.txt      
 sysadmin@localhost:~/Documents$ cat newfile1.txt                                
 I like food.                                                                    
 This food is good.
+
+#vi Editor
+It is the universal text editor in Linux. It does not use a mouse and operates through 3 modes (always use Esc to return to the main mode).
+sysadmin@localhost:~/Documents$ cd ..           #Moves up one directory level to the user's home folder
+sysadmin@localhost:~$ vi newfile.txt   #Opens or creates a file named newfile.txt using the vi text editor
+
