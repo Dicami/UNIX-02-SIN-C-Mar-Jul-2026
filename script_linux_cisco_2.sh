@@ -293,3 +293,21 @@ passwd: password updated successfully
 root@localhost:~# exit  #Exits the root session and returns to the normal user shell
 exit
 
+sysadmin@localhost:~/Documents$ cat food.txt                                    
+Food is good.                                                                   
+sysadmin@localhost:~/Documents$  cat food.txt > newfile1.txt     #Redirects the output of cat to create or overwrite newfile1.txt
+sysadmin@localhost:~/Documents$ cat newfile1.txt                                
+Food is good.                                                                   
+sysadmin@localhost:~/Documents$  echo "Hello"     #Prints text directly to the standard output
+Hello                                                                           
+sysadmin@localhost:~/Documents$  cat newfile1.txt                               
+Food is good.                                                                   
+sysadmin@localhost:~/Documents$ echo "I like food." > newfile1.txt      #Overwrites the existing content of newfile1.txt with new text
+sysadmin@localhost:~/Documents$ cat newfile1.txt                                
+I like food.                                                                   
+sysadmin@localhost:~/Documents$ cat newfile1.txt                                
+I like food.                                                                   
+sysadmin@localhost:~/Documents$  echo "This food is good." >> newfile1.txt      #Appends new text to the end of newfile1.txt without overwriting
+sysadmin@localhost:~/Documents$ cat newfile1.txt                                
+I like food.                                                                    
+This food is good.
