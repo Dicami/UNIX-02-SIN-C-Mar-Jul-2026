@@ -154,6 +154,44 @@ Broadcast message from sysadmin@localhost
 The system is going down for maintenance in 1 minute!                           
 Goodbye World!
 
+root@localhost:~# ifconfig  #Displays network interface configuration parameters and current settings
+eth0          Link encap:Ethernet  HWaddr 02:42:c0:a8:01:02 
+              inet addr:192.168.1.2  Bcast:192.168.1.255  Mask:255.255.255.0
+              UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+              RX packets:19 errors:0 dropped:1 overruns:0 frame:0
+              TX packets:2 errors:0 dropped:0 overruns:0 carrier:0
+              collisions:0 txqueuelen:1000 
+              RX bytes:1446 (1.4 KB)  TX bytes:176 (176.0 B) 
                                                                                 
+lo            Link encap:Local Loopback 
+              inet addr:127.0.0.1  Mask:255.0.0.0
+              inet6 addr: ::1/128 Scope:Host
+              UP LOOPBACK RUNNING  MTU:65536  Metric:1
+              RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+              TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+              collisions:0 txqueuelen:1000 
+              RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+root@localhost:~# ping -c 4 192.168.1.2         #Sends 4 ICMP echo requests to verify network connectivity to the specified IP
+PING 192.168.1.2 (192.168.1.2) 56(84) bytes of data.                            
+64 bytes from 192.168.1.2: icmp_seq=1 ttl=64 time=0.050 ms                      
+64 bytes from 192.168.1.2: icmp_seq=2 ttl=64 time=0.031 ms                      
+64 bytes from 192.168.1.2: icmp_seq=3 ttl=64 time=0.035 ms                      
+64 bytes from 192.168.1.2: icmp_seq=4 ttl=64 time=0.030 ms                      
+                                                                                
+--- 192.168.1.2 ping statistics ---                                             
+4 packets transmitted, 4 received, 0% packet loss, time 3066ms                  
+rtt min/avg/max/mdev = 0.030/0.036/0.050/0.010 ms
+root@localhost:~# ping -c 4 192.168.1.3         #Attempts to ping an unreachable host to test network error handling
+PING 192.168.1.3 (192.168.1.3) 56(84) bytes of data.                            
+From 192.168.1.2 icmp_seq=1 Destination Host Unreachable                        
+From 192.168.1.2 icmp_seq=2 Destination Host Unreachable                        
+From 192.168.1.2 icmp_seq=3 Destination Host Unreachable                        
+From 192.168.1.2 icmp_seq=4 Destination Host Unreachable                        
+                                                                                
+--- 192.168.1.3 ping statistics ---                                             
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3079ms     
+pipe 4                                                                          
+root@localhost:~# exit  #Exits the root superuser session and returns to the normal user
+logout
 
 
