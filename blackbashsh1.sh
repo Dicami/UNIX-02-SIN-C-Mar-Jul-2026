@@ -12,3 +12,13 @@
 [Camila_Villagran-Dicami-UIDE] /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # df -h
 [Camila_Villagran-Dicami-UIDE] /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # bash -x blackhatbash1.sh
 [Camila_Villagran-Dicami-UIDE] /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # bash -r blackhatbash1.sh
+
+
+[Camila_Villagran-Dicami-UIDE] /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # ./blackhatbash1.sh
+
+[Camila_Villagran-Dicami-UIDE] /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # chmod u+x blackhatbash1.sh
+[Camila_Villagran-Dicami-UIDE] /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # ./blackhatbash1.sh
+[Camila_Villagran-Dicami-UIDE] /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # bash -n blackhatbash1.sh
+[Camila_Villagran-Dicami-UIDE] /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # set +x
+
+
