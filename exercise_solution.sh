@@ -1,20 +1,17 @@
 #!/bin/bash
 
-# Store the input arguments into clean variables
-FIRST_NAME="${1}"
-LAST_NAME="${2}"
+# Grab the incoming command line arguments
+FIRST_NAME="$1"
+LAST_NAME="$2"
 
-# Create an empty file named output.txt
-touch output.txt
+# Start fresh by writing today's date to the file
+date +"%d-%m-%Y" > output.txt
 
-# Log the current date using the DD-MM-YYYY format
-date +%M-%d-%Y >> output.txt
+# Append the user's full name right below the date
+echo "$FIRST_NAME $LAST_NAME" >> output.txt
 
-# Append the full name to the end of the file
-echo "${FIRST_NAME} ${LAST_NAME}" >> output.txt
-
-# Create a safety backup in backup.txt
+# Save a duplicate copy for safekeeping
 cp output.txt backup.txt
 
-# Display the final content of output.txt on the screen
+# Output the final file content to the terminal
 cat output.txt
