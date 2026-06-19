@@ -22,3 +22,6 @@ awk 'NR < 10' log.txt
 grep "42.236.10.117" log.txt #Shows the 7th column (the URLs) for every line in the file.
 awk '{print $7}' log.txt #Filters and shows the full lines belonging only to that IP.
 grep "42.236.10.117" log.txt | awk '{print $7}' #Combines both. Shows only the URLs visited by that specific IP.
+sed 's/Mozilla/Godzilla/g' log.txt
+grep "Godzilla" log.txt
+grep "Godzilla" newlog.txt
